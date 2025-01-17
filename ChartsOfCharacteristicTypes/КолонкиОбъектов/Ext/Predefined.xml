@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.18">
+	<Item id="ffdc24e4-e9b9-4308-8d2c-a08b7a84f1da">
+		<Name>Автор</Name>
+		<Code>0000000000000014</Code>
+		<Description>Автор</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>100</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5499ee07-c06c-4a4e-8222-2db6bcf74dd1">
+		<Name>Версия</Name>
+		<Code>0000000000000005</Code>
+		<Description>Версия</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЭлементыОбъектовСистемы</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="07068d89-bdfc-4013-92f6-240b3b9084fd">
+		<Name>ВидДвижения</Name>
+		<Code>0000000000000100</Code>
+		<Description>Вид движения</Description>
+		<Type>
+			<v8:Type>xs:boolean</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="891c457b-196b-4c93-94e1-50ebb1752f04">
+		<Name>Дата</Name>
+		<Code>0000000000000011</Code>
+		<Description>Дата</Description>
+		<Type>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8a3e68ee-2101-47c9-b2f4-10899f9e03da">
+		<Name>ИдентификаторТранзакции</Name>
+		<Code>0000000000000015</Code>
+		<Description>Идентификатор транзакции</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>100</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="eca79a6a-4787-4bf2-9f35-1db179b4a08a">
+		<Name>Источник</Name>
+		<Code>0000000000000002</Code>
+		<Description>Источник</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЭлементыОбъектовСистемы</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4d1b0689-aa32-4bba-a71c-0fc08a751c91">
+		<Name>Корректировка</Name>
+		<Code>0000000000000004</Code>
+		<Description>Корректировка</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЭлементыОбъектовСистемы</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="71b46d39-cf51-4a8f-b1ba-10213b4f9935">
+		<Name>Наименование</Name>
+		<Code>0000000000000013</Code>
+		<Description>Наименование</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>100</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3b6c7e80-c394-439d-a920-1023a34051ef">
+		<Name>Номер</Name>
+		<Code>0000000000000012</Code>
+		<Description>Номер</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>100</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5d3f0af5-575a-4f67-af49-74efe2155e2f">
+		<Name>ОбъектСистемы</Name>
+		<Code>0000000000000021</Code>
+		<Description>Объект системы</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>100</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2e742c76-f006-4d52-b8d1-d64b2ccc32b2">
+		<Name>Основание</Name>
+		<Code>0000000000000003</Code>
+		<Description>Основание</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЭлементыОбъектовСистемы</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dac444f5-d155-4ec7-9988-382f98b16dbd">
+		<Name>ВариантОбъекта</Name>
+		<Code>0000000000000022</Code>
+		<Description>ВариантОбъекта</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>100</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="b7a7993c-8e6b-427c-924a-97792dde0675">
+		<Name>Ссылка</Name>
+		<Code>0000000000000001</Code>
+		<Description>Ссылка</Description>
+		<Type>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ЭлементыОбъектовСистемы</v8:Type>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="14242000-7f13-4219-b2a4-e87105e31e98">
+		<Name>СтрокаТаблицы</Name>
+		<Code>0000000000000091</Code>
+		<Description>Строка таблицы</Description>
+		<Type>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>36</v8:Length>
+				<v8:AllowedLength>Fixed</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

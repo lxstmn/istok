@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="bda044ee-5d24-401a-ac46-caf0ed255225">
+		<Name>Документ</Name>
+		<Code>000000003</Code>
+		<Description>Документ</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9bd8a54d-d69b-431e-a8a4-42cda3b19110">
+		<Name>Пакет</Name>
+		<Code>000000002</Code>
+		<Description>Пакет</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="06c1fa45-56e2-4b69-9af4-7b1f849c7194">
+		<Name>РазрезДанных</Name>
+		<Code>000000004</Code>
+		<Description>Разрез данных</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="22e580fd-b2a5-4b75-9d1d-b73e63e898d9">
+		<Name>Справочник</Name>
+		<Code>000000001</Code>
+		<Description>Справочник</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="da7f28a0-3439-4382-85f7-b28cd87e597d">
+		<Name>Таблица</Name>
+		<Code>000000005</Code>
+		<Description>Таблица</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

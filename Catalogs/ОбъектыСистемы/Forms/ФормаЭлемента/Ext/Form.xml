@@ -1,0 +1,3074 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<SaveWindowSettings>false</SaveWindowSettings>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="307">
+			<VerticalStretch>false</VerticalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="308"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="305">
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="306"/>
+					<ChildItems>
+						<InputField name="Родитель" id="300">
+							<DataPath>Объект.Parent</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ChoiceParameters>
+								<app:item name="Отбор.ПометкаУдаления">
+									<app:value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:boolean">false</Value>
+									</app:value>
+								</app:item>
+							</ChoiceParameters>
+							<ContextMenu name="РодительКонтекстноеМеню" id="301"/>
+							<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="302"/>
+						</InputField>
+						<UsualGroup name="Группа3" id="309">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="310"/>
+							<ChildItems>
+								<InputField name="Код" id="1">
+									<DataPath>Объект.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<LabelDecoration name="ЦветXML" id="311">
+									<Width>25</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<BackColor>#EAEAEA</BackColor>
+									<ContextMenu name="ЦветXMLКонтекстноеМеню" id="312"/>
+									<ExtendedTooltip name="ЦветXMLРасширеннаяПодсказка" id="313"/>
+									<Events>
+										<Event name="Click">ЦветXMLНажатие</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="СистемноеНаименование" id="105">
+							<DataPath>Объект.СистемноеНаименование</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СистемноеНаименованиеКонтекстноеМеню" id="106"/>
+							<ExtendedTooltip name="СистемноеНаименованиеРасширеннаяПодсказка" id="107"/>
+						</InputField>
+						<InputField name="ГУИД" id="643">
+							<DataPath>ГУИД</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ГУИДКонтекстноеМеню" id="644"/>
+							<ExtendedTooltip name="ГУИДРасширеннаяПодсказка" id="645"/>
+						</InputField>
+						<InputField name="ТипОбъекта" id="102">
+							<DataPath>Объект.ТипОбъекта</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТипОбъектаКонтекстноеМеню" id="103"/>
+							<ExtendedTooltip name="ТипОбъектаРасширеннаяПодсказка" id="104"/>
+							<Events>
+								<Event name="OnChange">ТипОбъектаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="Группа5" id="655">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="656"/>
+							<ChildItems>
+								<CheckBoxField name="ВестиВариантыОбъектов" id="358">
+									<DataPath>Объект.ВестиВариантыОбъектов</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВестиВариантыОбъектовКонтекстноеМеню" id="359"/>
+									<ExtendedTooltip name="ВестиВариантыОбъектовРасширеннаяПодсказка" id="360"/>
+									<Events>
+										<Event name="OnChange">ВестиВариантыОбъектовПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="АлгоритмЗаписи" id="640">
+									<DataPath>Объект.АлгоритмЗаписи</DataPath>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="АлгоритмЗаписиКонтекстноеМеню" id="641"/>
+									<ExtendedTooltip name="АлгоритмЗаписиРасширеннаяПодсказка" id="642"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа4" id="361">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ThroughAlign>Use</ThroughAlign>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="362"/>
+							<ChildItems>
+								<CheckBoxField name="ВестиКорректировки" id="649">
+									<DataPath>Объект.ВестиКорректировки</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При установленном флаге "Вести варианты объектов" настройка ведения корректировок должна быть выполнена и для объекта системы и для вариантов объектов.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВестиКорректировкиКонтекстноеМеню" id="650"/>
+									<ExtendedTooltip name="ВестиКорректировкиРасширеннаяПодсказка" id="651"/>
+								</CheckBoxField>
+								<InputField name="АлгоритмЗаписиКорректировки" id="652">
+									<DataPath>Объект.АлгоритмЗаписиКорректировки</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="АлгоритмЗаписиКорректировкиКонтекстноеМеню" id="653"/>
+									<ExtendedTooltip name="АлгоритмЗаписиКорректировкиРасширеннаяПодсказка" id="654"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<CheckBoxField name="ВестиВерсии" id="629">
+							<DataPath>Объект.ВестиВерсии</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При установленном флаге "Вести варианты объектов" настройка ведения версий должна быть выполнена и для объекта системы и для вариантов объектов.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВестиВерсииКонтекстноеМеню" id="630"/>
+							<ExtendedTooltip name="ВестиВерсииРасширеннаяПодсказка" id="631"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Описание" id="249">
+					<DataPath>Объект.Описание</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Height>5</Height>
+					<VerticalStretch>true</VerticalStretch>
+					<MultiLine>true</MultiLine>
+					<ExtendedEdit>true</ExtendedEdit>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОписаниеКонтекстноеМеню" id="250"/>
+					<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="251"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="Страницы" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<Page name="ГруппаКолонки" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонки</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаКолонкиРасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<Table name="Колонки" id="546">
+							<Representation>Tree</Representation>
+							<Height>1</Height>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>Колонки</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="КолонкиКонтекстноеМеню" id="547"/>
+							<AutoCommandBar name="КолонкиКоманднаяПанель" id="548">
+								<ChildItems>
+									<Button name="КолонкиДобавитьВариантОбъектаКолонки" id="627">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобавитьВариантОбъектаКолонки</CommandName>
+										<ExtendedTooltip name="КолонкиДобавитьВариантОбъектаКолонкиРасширеннаяПодсказка" id="628"/>
+									</Button>
+									<Button name="КолонкиДобавитьКолонку" id="625">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобавитьКолонку</CommandName>
+										<ExtendedTooltip name="КолонкиДобавитьКолонкуРасширеннаяПодсказка" id="626"/>
+									</Button>
+									<ButtonGroup name="КолонкиГруппа5" id="623">
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="КолонкиГруппа5РасширеннаяПодсказка" id="624"/>
+										<ChildItems>
+											<Button name="КолонкиПереместитьВверх" id="619">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Колонки.StandardCommand.MoveUp</CommandName>
+												<ExtendedTooltip name="КолонкиПереместитьВверхРасширеннаяПодсказка" id="620"/>
+											</Button>
+											<Button name="КолонкиПереместитьВниз" id="621">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Колонки.StandardCommand.MoveDown</CommandName>
+												<ExtendedTooltip name="КолонкиПереместитьВнизРасширеннаяПодсказка" id="622"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="КолонкиРасширеннаяПодсказка" id="549"/>
+							<SearchStringAddition name="КолонкиСтрокаПоиска" id="550">
+								<AdditionSource>
+									<Item>Колонки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КолонкиСтрокаПоискаКонтекстноеМеню" id="551"/>
+								<ExtendedTooltip name="КолонкиСтрокаПоискаРасширеннаяПодсказка" id="552"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КолонкиСостояниеПросмотра" id="553">
+								<AdditionSource>
+									<Item>Колонки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КолонкиСостояниеПросмотраКонтекстноеМеню" id="554"/>
+								<ExtendedTooltip name="КолонкиСостояниеПросмотраРасширеннаяПодсказка" id="555"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КолонкиУправлениеПоиском" id="556">
+								<AdditionSource>
+									<Item>Колонки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КолонкиУправлениеПоискомКонтекстноеМеню" id="557"/>
+								<ExtendedTooltip name="КолонкиУправлениеПоискомРасширеннаяПодсказка" id="558"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="КолонкиВариантОбъекта" id="559">
+									<DataPath>Колонки.ВариантОбъекта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Отбор.Владелец</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Объект.Ref</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ChoiceParameters>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="КолонкиВариантОбъектаКонтекстноеМеню" id="560"/>
+									<ExtendedTooltip name="КолонкиВариантОбъектаРасширеннаяПодсказка" id="561"/>
+								</InputField>
+								<InputField name="КолонкиКолонка" id="562">
+									<DataPath>Колонки.Колонка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameters>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="КолонкиКолонкаКонтекстноеМеню" id="563"/>
+									<ExtendedTooltip name="КолонкиКолонкаРасширеннаяПодсказка" id="564"/>
+								</InputField>
+								<CheckBoxField name="КолонкиИсключить" id="574">
+									<DataPath>Колонки.Исключить</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КолонкиИсключитьКонтекстноеМеню" id="575"/>
+									<ExtendedTooltip name="КолонкиИсключитьРасширеннаяПодсказка" id="576"/>
+								</CheckBoxField>
+								<CheckBoxField name="КолонкиСохранять" id="632">
+									<DataPath>Колонки.Сохранять</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КолонкиСохранятьКонтекстноеМеню" id="633"/>
+									<ExtendedTooltip name="КолонкиСохранятьРасширеннаяПодсказка" id="634"/>
+									<Events>
+										<Event name="OnChange">ТаблицыСохранятьВводПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="КолонкиВвод" id="565">
+									<DataPath>Колонки.Ввод</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КолонкиВводКонтекстноеМеню" id="566"/>
+									<ExtendedTooltip name="КолонкиВводРасширеннаяПодсказка" id="567"/>
+									<Events>
+										<Event name="OnChange">ТаблицыСохранятьВводПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="КолонкиВключитьВНаименование" id="568">
+									<DataPath>Колонки.ВключитьВНаименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КолонкиВключитьВНаименованиеКонтекстноеМеню" id="569"/>
+									<ExtendedTooltip name="КолонкиВключитьВНаименованиеРасширеннаяПодсказка" id="570"/>
+								</CheckBoxField>
+								<CheckBoxField name="КолонкиВыводитьВСписке" id="571">
+									<DataPath>Колонки.ВыводитьВСписке</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КолонкиВыводитьВСпискеКонтекстноеМеню" id="572"/>
+									<ExtendedTooltip name="КолонкиВыводитьВСпискеРасширеннаяПодсказка" id="573"/>
+								</CheckBoxField>
+								<ColumnGroup name="КолонкиГруппа1" id="601">
+									<Visible>false</Visible>
+									<ExtendedTooltip name="КолонкиГруппа1РасширеннаяПодсказка" id="602"/>
+									<ChildItems>
+										<InputField name="КолонкиВладелецТипаКолонки" id="577">
+											<DataPath>Колонки.ВладелецТипаКолонки</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceParameters>
+												<app:item name="Отбор.ПометкаУдаления">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="КолонкиВладелецТипаКолонкиКонтекстноеМеню" id="578"/>
+											<ExtendedTooltip name="КолонкиВладелецТипаКолонкиРасширеннаяПодсказка" id="579"/>
+										</InputField>
+										<InputField name="КолонкиВладелецЗначенияКолонки" id="586">
+											<DataPath>Колонки.ВладелецЗначенияКолонки</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceParameters>
+												<app:item name="Отбор.ПометкаУдаления">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="КолонкиВладелецЗначенияКолонкиКонтекстноеМеню" id="587"/>
+											<ExtendedTooltip name="КолонкиВладелецЗначенияКолонкиРасширеннаяПодсказка" id="588"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КолонкиГруппа2" id="603">
+									<Visible>false</Visible>
+									<ExtendedTooltip name="КолонкиГруппа2РасширеннаяПодсказка" id="604"/>
+									<ChildItems>
+										<InputField name="КолонкиТаблицаТиповКолонки" id="580">
+											<DataPath>Колонки.ТаблицаТиповКолонки</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceParameters>
+												<app:item name="Отбор.ПометкаУдаления">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="КолонкиТаблицаТиповКолонкиКонтекстноеМеню" id="581"/>
+											<ExtendedTooltip name="КолонкиТаблицаТиповКолонкиРасширеннаяПодсказка" id="582"/>
+										</InputField>
+										<InputField name="КолонкиТаблицаВладельцевЗначения" id="589">
+											<DataPath>Колонки.ТаблицаВладельцевЗначения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceParameters>
+												<app:item name="Отбор.ПометкаУдаления">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="КолонкиТаблицаВладельцевЗначенияКонтекстноеМеню" id="590"/>
+											<ExtendedTooltip name="КолонкиТаблицаВладельцевЗначенияРасширеннаяПодсказка" id="591"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КолонкиГруппа3" id="605">
+									<Visible>false</Visible>
+									<ExtendedTooltip name="КолонкиГруппа3РасширеннаяПодсказка" id="606"/>
+									<ChildItems>
+										<InputField name="КолонкиКолонкаТипаКолонки" id="583">
+											<DataPath>Колонки.КолонкаТипаКолонки</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceParameters>
+												<app:item name="Отбор.ПометкаУдаления">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="КолонкиКолонкаТипаКолонкиКонтекстноеМеню" id="584"/>
+											<ExtendedTooltip name="КолонкиКолонкаТипаКолонкиРасширеннаяПодсказка" id="585"/>
+										</InputField>
+										<InputField name="КолонкиКолонкаВладельцаЗначения" id="592">
+											<DataPath>Колонки.КолонкаВладельцаЗначения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceParameters>
+												<app:item name="Отбор.ПометкаУдаления">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="КолонкиКолонкаВладельцаЗначенияКонтекстноеМеню" id="593"/>
+											<ExtendedTooltip name="КолонкиКолонкаВладельцаЗначенияРасширеннаяПодсказка" id="594"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="КолонкиГруппа4" id="607">
+									<Visible>false</Visible>
+									<ExtendedTooltip name="КолонкиГруппа4РасширеннаяПодсказка" id="608"/>
+									<ChildItems>
+										<InputField name="КолонкиКолонкаИсточник" id="595">
+											<DataPath>Колонки.КолонкаИсточник</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceParameters>
+												<app:item name="Отбор.ПометкаУдаления">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="КолонкиКолонкаИсточникКонтекстноеМеню" id="596"/>
+											<ExtendedTooltip name="КолонкиКолонкаИсточникРасширеннаяПодсказка" id="597"/>
+										</InputField>
+										<InputField name="КолонкиЗначениеИсточника" id="598">
+											<DataPath>Колонки.ЗначениеИсточника</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceParameters>
+												<app:item name="Отбор.ПометкаУдаления">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="КолонкиЗначениеИсточникаКонтекстноеМеню" id="599"/>
+											<ExtendedTooltip name="КолонкиЗначениеИсточникаРасширеннаяПодсказка" id="600"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТаблицы" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблицы</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаТаблицыРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<Table name="Таблицы" id="515">
+							<Representation>Tree</Representation>
+							<Height>1</Height>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>Таблицы</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="ТаблицыКонтекстноеМеню" id="516"/>
+							<AutoCommandBar name="ТаблицыКоманднаяПанель" id="517">
+								<ChildItems>
+									<Button name="ТаблицыДобавитьВариантОбъектаТаблицы" id="611">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобавитьВариантОбъектаТаблицы</CommandName>
+										<ExtendedTooltip name="ТаблицыДобавитьВариантОбъектаТаблицыРасширеннаяПодсказка" id="612"/>
+									</Button>
+									<Button name="ТаблицыДобавитьТаблицу" id="609">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобавитьТаблицу</CommandName>
+										<ExtendedTooltip name="ТаблицыДобавитьТаблицуРасширеннаяПодсказка" id="610"/>
+									</Button>
+									<ButtonGroup name="ТаблицыГруппа1" id="613">
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="ТаблицыГруппа1РасширеннаяПодсказка" id="614"/>
+										<ChildItems>
+											<Button name="ТаблицыПереместитьВверх" id="615">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Таблицы.StandardCommand.MoveUp</CommandName>
+												<ExtendedTooltip name="ТаблицыПереместитьВверхРасширеннаяПодсказка" id="616"/>
+											</Button>
+											<Button name="ТаблицыПереместитьВниз" id="617">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Таблицы.StandardCommand.MoveDown</CommandName>
+												<ExtendedTooltip name="ТаблицыПереместитьВнизРасширеннаяПодсказка" id="618"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицыРасширеннаяПодсказка" id="518"/>
+							<SearchStringAddition name="ТаблицыСтрокаПоиска" id="519">
+								<AdditionSource>
+									<Item>Таблицы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицыСтрокаПоискаКонтекстноеМеню" id="520"/>
+								<ExtendedTooltip name="ТаблицыСтрокаПоискаРасширеннаяПодсказка" id="521"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицыСостояниеПросмотра" id="522">
+								<AdditionSource>
+									<Item>Таблицы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицыСостояниеПросмотраКонтекстноеМеню" id="523"/>
+								<ExtendedTooltip name="ТаблицыСостояниеПросмотраРасширеннаяПодсказка" id="524"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицыУправлениеПоиском" id="525">
+								<AdditionSource>
+									<Item>Таблицы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицыУправлениеПоискомКонтекстноеМеню" id="526"/>
+								<ExtendedTooltip name="ТаблицыУправлениеПоискомРасширеннаяПодсказка" id="527"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТаблицыВариантОбъекта" id="528">
+									<DataPath>Таблицы.ВариантОбъекта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Отбор.Владелец</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Объект.Ref</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ChoiceParameters>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="ТаблицыВариантОбъектаКонтекстноеМеню" id="529"/>
+									<ExtendedTooltip name="ТаблицыВариантОбъектаРасширеннаяПодсказка" id="530"/>
+								</InputField>
+								<InputField name="ТаблицыТаблица" id="531">
+									<DataPath>Таблицы.Таблица</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameters>
+										<app:item name="Отбор.ТипОбъекта">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыОбъектов.Таблица</Value>
+											</app:value>
+										</app:item>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="ТаблицыТаблицаКонтекстноеМеню" id="532"/>
+									<ExtendedTooltip name="ТаблицыТаблицаРасширеннаяПодсказка" id="533"/>
+								</InputField>
+								<CheckBoxField name="ТаблицыИсключить" id="537">
+									<DataPath>Таблицы.Исключить</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицыИсключитьКонтекстноеМеню" id="538"/>
+									<ExtendedTooltip name="ТаблицыИсключитьРасширеннаяПодсказка" id="539"/>
+								</CheckBoxField>
+								<CheckBoxField name="ТаблицыСохранять" id="637">
+									<DataPath>Таблицы.Сохранять</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицыСохранятьКонтекстноеМеню" id="638"/>
+									<ExtendedTooltip name="ТаблицыСохранятьРасширеннаяПодсказка" id="639"/>
+									<Events>
+										<Event name="OnChange">ТаблицыСохранятьВводПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="ТаблицыВвод" id="534">
+									<DataPath>Таблицы.Ввод</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТаблицыВводКонтекстноеМеню" id="535"/>
+									<ExtendedTooltip name="ТаблицыВводРасширеннаяПодсказка" id="536"/>
+									<Events>
+										<Event name="OnChange">ТаблицыСохранятьВводПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<ColumnGroup name="ТаблицыГруппа2" id="657">
+									<Visible>false</Visible>
+									<ExtendedTooltip name="ТаблицыГруппа2РасширеннаяПодсказка" id="658"/>
+									<ChildItems>
+										<InputField name="ТаблицыКолонкаИсточник" id="540">
+											<DataPath>Таблицы.КолонкаИсточник</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceParameters>
+												<app:item name="Отбор.ПометкаУдаления">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="ТаблицыКолонкаИсточникКонтекстноеМеню" id="541"/>
+											<ExtendedTooltip name="ТаблицыКолонкаИсточникРасширеннаяПодсказка" id="542"/>
+										</InputField>
+										<InputField name="ТаблицыЗначениеИсточника" id="543">
+											<DataPath>Таблицы.ЗначениеИсточника</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ChoiceParameters>
+												<app:item name="Отбор.ПометкаУдаления">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="ТаблицыЗначениеИсточникаКонтекстноеМеню" id="544"/>
+											<ExtendedTooltip name="ТаблицыЗначениеИсточникаРасширеннаяПодсказка" id="545"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаРазрезыДанных" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проводки</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="ГруппаРазрезыДанныхРасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<Table name="РазрезыДанных" id="401">
+							<Representation>Tree</Representation>
+							<Height>1</Height>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>РазрезыДанных</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="РазрезыДанныхКонтекстноеМеню" id="402"/>
+							<AutoCommandBar name="РазрезыДанныхКоманднаяПанель" id="403">
+								<ChildItems>
+									<Button name="РазрезыДанныхДобавитьВариантОбъектаРазрезаДанных" id="435">
+										<Type>CommandBarButton</Type>
+										<HorizontalStretch>true</HorizontalStretch>
+										<VerticalStretch>true</VerticalStretch>
+										<CommandName>Form.Command.ДобавитьВариантОбъектаРазрезаДанных</CommandName>
+										<ExtendedTooltip name="РазрезыДанныхДобавитьВариантОбъектаРазрезаДанныхРасширеннаяПодсказка" id="436"/>
+									</Button>
+									<Button name="РазрезыДанныхДобавитьРазрезДанных" id="437">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобавитьРазрезДанных</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Добавить проводку</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="РазрезыДанныхДобавитьРазрезДанныхРасширеннаяПодсказка" id="438"/>
+									</Button>
+									<ButtonGroup name="РазрезыДанныхГруппа1" id="443">
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="РазрезыДанныхГруппа1РасширеннаяПодсказка" id="444"/>
+										<ChildItems>
+											<Button name="РазрезыДанныхПереместитьВверх" id="439">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РазрезыДанных.StandardCommand.MoveUp</CommandName>
+												<ExtendedTooltip name="РазрезыДанныхПереместитьВверхРасширеннаяПодсказка" id="440"/>
+											</Button>
+											<Button name="РазрезыДанныхПереместитьВниз" id="441">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.РазрезыДанных.StandardCommand.MoveDown</CommandName>
+												<ExtendedTooltip name="РазрезыДанныхПереместитьВнизРасширеннаяПодсказка" id="442"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="РазрезыДанныхРасширеннаяПодсказка" id="404"/>
+							<SearchStringAddition name="РазрезыДанныхСтрокаПоиска" id="405">
+								<AdditionSource>
+									<Item>РазрезыДанных</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РазрезыДанныхСтрокаПоискаКонтекстноеМеню" id="406"/>
+								<ExtendedTooltip name="РазрезыДанныхСтрокаПоискаРасширеннаяПодсказка" id="407"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РазрезыДанныхСостояниеПросмотра" id="408">
+								<AdditionSource>
+									<Item>РазрезыДанных</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РазрезыДанныхСостояниеПросмотраКонтекстноеМеню" id="409"/>
+								<ExtendedTooltip name="РазрезыДанныхСостояниеПросмотраРасширеннаяПодсказка" id="410"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РазрезыДанныхУправлениеПоиском" id="411">
+								<AdditionSource>
+									<Item>РазрезыДанных</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РазрезыДанныхУправлениеПоискомКонтекстноеМеню" id="412"/>
+								<ExtendedTooltip name="РазрезыДанныхУправлениеПоискомРасширеннаяПодсказка" id="413"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="РазрезыДанныхВариантОбъекта" id="445">
+									<DataPath>РазрезыДанных.ВариантОбъекта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Отбор.Владелец</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Объект.Ref</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ChoiceParameters>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="РазрезыДанныхВариантОбъектаКонтекстноеМеню" id="446"/>
+									<ExtendedTooltip name="РазрезыДанныхВариантОбъектаРасширеннаяПодсказка" id="447"/>
+								</InputField>
+								<InputField name="РазрезыДанныхРазрезДанных" id="414">
+									<DataPath>РазрезыДанных.РазрезДанных</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameters>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="РазрезыДанныхРазрезДанныхКонтекстноеМеню" id="415"/>
+									<ExtendedTooltip name="РазрезыДанныхРазрезДанныхРасширеннаяПодсказка" id="416"/>
+									<Events>
+										<Event name="OnChange">РазрезыДанныхРазрезДанныхПриИзменении</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="РазрезыДанныхИсключить" id="512">
+									<DataPath>РазрезыДанных.Исключить</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РазрезыДанныхИсключитьКонтекстноеМеню" id="513"/>
+									<ExtendedTooltip name="РазрезыДанныхИсключитьРасширеннаяПодсказка" id="514"/>
+									<Events>
+										<Event name="OnChange">РазрезыДанныхРазрезДанныхПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<InputField name="РазрезыДанныхТаблица" id="417">
+									<DataPath>РазрезыДанных.Таблица</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameters>
+										<app:item name="Отбор.ТипОбъекта">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыОбъектов.Таблица</Value>
+											</app:value>
+										</app:item>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="РазрезыДанныхТаблицаКонтекстноеМеню" id="418"/>
+									<ExtendedTooltip name="РазрезыДанныхТаблицаРасширеннаяПодсказка" id="419"/>
+									<Events>
+										<Event name="OnChange">РазрезыДанныхТаблицаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="РазрезыДанныхКонтрольОстатков" id="420">
+									<DataPath>РазрезыДанных.КонтрольОстатков</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="РазрезыДанныхКонтрольОстатковКонтекстноеМеню" id="421"/>
+									<ExtendedTooltip name="РазрезыДанныхКонтрольОстатковРасширеннаяПодсказка" id="422"/>
+								</CheckBoxField>
+								<InputField name="РазрезыДанныхКолонкаРазрезаДанных" id="423">
+									<DataPath>РазрезыДанных.КолонкаРазрезаДанных</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РазрезыДанныхКолонкаРазрезаДанныхКонтекстноеМеню" id="424"/>
+									<ExtendedTooltip name="РазрезыДанныхКолонкаРазрезаДанныхРасширеннаяПодсказка" id="425"/>
+								</InputField>
+								<InputField name="РазрезыДанныхКолонкаОбъекта" id="426">
+									<DataPath>РазрезыДанных.КолонкаОбъекта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameters>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="РазрезыДанныхКолонкаОбъектаКонтекстноеМеню" id="427"/>
+									<ExtendedTooltip name="РазрезыДанныхКолонкаОбъектаРасширеннаяПодсказка" id="428"/>
+								</InputField>
+								<InputField name="РазрезыДанныхКолонкаТаблицы" id="429">
+									<DataPath>РазрезыДанных.КолонкаТаблицы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>1</Width>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameters>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="РазрезыДанныхКолонкаТаблицыКонтекстноеМеню" id="430"/>
+									<ExtendedTooltip name="РазрезыДанныхКолонкаТаблицыРасширеннаяПодсказка" id="431"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаОснования" id="314">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основания</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаОснованияРасширеннаяПодсказка" id="315"/>
+					<ChildItems>
+						<Table name="Основания" id="366">
+							<Representation>Tree</Representation>
+							<Height>1</Height>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<AutoAddIncomplete>false</AutoAddIncomplete>
+							<DataPath>Основания</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="ОснованияКонтекстноеМеню" id="367"/>
+							<AutoCommandBar name="ОснованияКоманднаяПанель" id="368">
+								<ChildItems>
+									<Button name="ОснованияДобавитьОснование" id="393">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобавитьОснование</CommandName>
+										<ExtendedTooltip name="ОснованияДобавитьОснованиеРасширеннаяПодсказка" id="394"/>
+									</Button>
+									<Button name="ОснованияДобавитьВариантОбъектаОснования" id="391">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобавитьВариантОбъектаОснования</CommandName>
+										<ExtendedTooltip name="ОснованияДобавитьВариантОбъектаОснованияРасширеннаяПодсказка" id="392"/>
+									</Button>
+									<ButtonGroup name="ОснованияГруппа1" id="399">
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="ОснованияГруппа1РасширеннаяПодсказка" id="400"/>
+										<ChildItems>
+											<Button name="ОснованияПереместитьВверх" id="395">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Основания.StandardCommand.MoveUp</CommandName>
+												<ExtendedTooltip name="ОснованияПереместитьВверхРасширеннаяПодсказка" id="396"/>
+											</Button>
+											<Button name="ОснованияПереместитьВниз" id="397">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Основания.StandardCommand.MoveDown</CommandName>
+												<ExtendedTooltip name="ОснованияПереместитьВнизРасширеннаяПодсказка" id="398"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ОснованияРасширеннаяПодсказка" id="369"/>
+							<SearchStringAddition name="ОснованияСтрокаПоиска" id="370">
+								<AdditionSource>
+									<Item>Основания</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОснованияСтрокаПоискаКонтекстноеМеню" id="371"/>
+								<ExtendedTooltip name="ОснованияСтрокаПоискаРасширеннаяПодсказка" id="372"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОснованияСостояниеПросмотра" id="373">
+								<AdditionSource>
+									<Item>Основания</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОснованияСостояниеПросмотраКонтекстноеМеню" id="374"/>
+								<ExtendedTooltip name="ОснованияСостояниеПросмотраРасширеннаяПодсказка" id="375"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОснованияУправлениеПоиском" id="376">
+								<AdditionSource>
+									<Item>Основания</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОснованияУправлениеПоискомКонтекстноеМеню" id="377"/>
+								<ExtendedTooltip name="ОснованияУправлениеПоискомРасширеннаяПодсказка" id="378"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ОснованияОснование" id="382">
+									<DataPath>Основания.Основание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameters>
+										<app:item name="Отбор.ТипОбъекта">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="v8:FixedArray">
+													<v8:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыОбъектов.Документ</Value>
+													</v8:Value>
+													<v8:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xr:DesignTimeRef">Catalog.ТипыОбъектов.Справочник</Value>
+													</v8:Value>
+												</Value>
+											</app:value>
+										</app:item>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="ОснованияОснованиеКонтекстноеМеню" id="383"/>
+									<ExtendedTooltip name="ОснованияОснованиеРасширеннаяПодсказка" id="384"/>
+									<Events>
+										<Event name="OnChange">ОснованияОснованиеПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ОснованияВариантОбъектаОснования" id="385">
+									<DataPath>Основания.ВариантОбъектаОснования</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Отбор.Владелец</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Items.Основания.CurrentData.Основание</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ChoiceParameters>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="ОснованияВариантОбъектаОснованияКонтекстноеМеню" id="386"/>
+									<ExtendedTooltip name="ОснованияВариантОбъектаОснованияРасширеннаяПодсказка" id="387"/>
+								</InputField>
+								<InputField name="ОснованияВариантОбъекта" id="379">
+									<DataPath>Основания.ВариантОбъекта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceParameterLinks>
+										<xr:Link>
+											<xr:Name>Отбор.Владелец</xr:Name>
+											<xr:DataPath xsi:type="xs:string">Объект.Ref</xr:DataPath>
+											<xr:ValueChange>Clear</xr:ValueChange>
+										</xr:Link>
+									</ChoiceParameterLinks>
+									<ChoiceParameters>
+										<app:item name="Отбор.ПометкаУдаления">
+											<app:value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:boolean">false</Value>
+											</app:value>
+										</app:item>
+									</ChoiceParameters>
+									<ContextMenu name="ОснованияВариантОбъектаКонтекстноеМеню" id="380"/>
+									<ExtendedTooltip name="ОснованияВариантОбъектаРасширеннаяПодсказка" id="381"/>
+								</InputField>
+								<CheckBoxField name="ОснованияИсключить" id="388">
+									<DataPath>Основания.Исключить</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОснованияИсключитьКонтекстноеМеню" id="389"/>
+									<ExtendedTooltip name="ОснованияИсключитьРасширеннаяПодсказка" id="390"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаИсточники" id="659">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источники</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа источники</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаИсточникиРасширеннаяПодсказка" id="660"/>
+					<ChildItems>
+						<Table name="Источники" id="661">
+							<Representation>Tree</Representation>
+							<Height>1</Height>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<AutoAddIncomplete>false</AutoAddIncomplete>
+							<DataPath>Источники</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="ИсточникиКонтекстноеМеню" id="662"/>
+							<AutoCommandBar name="ИсточникиКоманднаяПанель" id="663">
+								<ChildItems>
+									<Button name="ИсточникиДобавитьИсточник" id="688">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобавитьИсточник</CommandName>
+										<ExtendedTooltip name="ИсточникиДобавитьИсточникРасширеннаяПодсказка" id="689"/>
+									</Button>
+									<Button name="ИсточникиДобавитьВариантОбъектаИсточника" id="686">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ДобавитьВариантОбъектаИсточника</CommandName>
+										<ExtendedTooltip name="ИсточникиДобавитьВариантОбъектаИсточникаРасширеннаяПодсказка" id="687"/>
+									</Button>
+									<ButtonGroup name="ИсточникиГруппа1" id="690">
+										<Representation>Compact</Representation>
+										<ExtendedTooltip name="ИсточникиГруппа1РасширеннаяПодсказка" id="691"/>
+										<ChildItems>
+											<Button name="ИсточникиПереместитьВверх" id="692">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Источники.StandardCommand.MoveUp</CommandName>
+												<ExtendedTooltip name="ИсточникиПереместитьВверхРасширеннаяПодсказка" id="693"/>
+											</Button>
+											<Button name="ИсточникиПереместитьВниз" id="694">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.Источники.StandardCommand.MoveDown</CommandName>
+												<ExtendedTooltip name="ИсточникиПереместитьВнизРасширеннаяПодсказка" id="695"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ИсточникиРасширеннаяПодсказка" id="664"/>
+							<SearchStringAddition name="ИсточникиСтрокаПоиска" id="665">
+								<AdditionSource>
+									<Item>Источники</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсточникиСтрокаПоискаКонтекстноеМеню" id="666"/>
+								<ExtendedTooltip name="ИсточникиСтрокаПоискаРасширеннаяПодсказка" id="667"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИсточникиСостояниеПросмотра" id="668">
+								<AdditionSource>
+									<Item>Источники</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсточникиСостояниеПросмотраКонтекстноеМеню" id="669"/>
+								<ExtendedTooltip name="ИсточникиСостояниеПросмотраРасширеннаяПодсказка" id="670"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИсточникиУправлениеПоиском" id="671">
+								<AdditionSource>
+									<Item>Источники</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсточникиУправлениеПоискомКонтекстноеМеню" id="672"/>
+								<ExtendedTooltip name="ИсточникиУправлениеПоискомРасширеннаяПодсказка" id="673"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ИсточникиИсточник" id="677">
+									<DataPath>Источники.Источник</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсточникиИсточникКонтекстноеМеню" id="678"/>
+									<ExtendedTooltip name="ИсточникиИсточникРасширеннаяПодсказка" id="679"/>
+								</InputField>
+								<InputField name="ИсточникиВариантОбъектаИсточника" id="680">
+									<DataPath>Источники.ВариантОбъектаИсточника</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсточникиВариантОбъектаИсточникаКонтекстноеМеню" id="681"/>
+									<ExtendedTooltip name="ИсточникиВариантОбъектаИсточникаРасширеннаяПодсказка" id="682"/>
+								</InputField>
+								<InputField name="ИсточникиВариантОбъекта" id="674">
+									<DataPath>Источники.ВариантОбъекта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсточникиВариантОбъектаКонтекстноеМеню" id="675"/>
+									<ExtendedTooltip name="ИсточникиВариантОбъектаРасширеннаяПодсказка" id="676"/>
+								</InputField>
+								<CheckBoxField name="ИсточникиИсключить" id="683">
+									<DataPath>Источники.Исключить</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИсточникиИсключитьКонтекстноеМеню" id="684"/>
+									<ExtendedTooltip name="ИсточникиИсключитьРасширеннаяПодсказка" id="685"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ОбъектыСистемы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<Columns>
+				<AdditionalColumns table="Объект.Таблицы"/>
+				<AdditionalColumns table="Объект.Колонки"/>
+			</Columns>
+		</Attribute>
+		<Attribute name="Основания" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВариантОбъекта" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вариант объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВариантыОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Основание" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ОбъектыСистемы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВариантОбъектаОснования" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вариант объекта основания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВариантыОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Исключить" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исключить</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Уровень" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уровень</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВариантыОбъектовОснованияВедутся" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Варианты объектов основания ведутся</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="РазрезыДанных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрезы данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="РазрезДанных" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разрез данных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РазрезыДанных</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Таблица" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ОбъектыСистемы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КонтрольОстатков" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контроль остатков</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаРазрезаДанных" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка разреза данных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.КолонкиОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаОбъекта" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.КолонкиОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаТаблицы" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка таблицы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.КолонкиОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Уровень" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уровень</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВариантОбъекта" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вариант объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВариантыОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Исключить" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исключить</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Колонки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Колонки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВариантОбъекта" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вариант объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВариантыОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Колонка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.КолонкиОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ввод" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ввод</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВключитьВНаименование" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Включить в наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВыводитьВСписке" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выводить в списке</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Исключить" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исключить</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВладелецТипаКолонки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Владелец типа Колонки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.КолонкиОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТаблицаТиповКолонки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица типов Колонки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ОбъектыСистемы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаТипаКолонки" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка типа Колонки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.КолонкиОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВладелецЗначенияКолонки" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Владелец значения Колонки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.КолонкиОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТаблицаВладельцевЗначения" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица владельцев значения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ОбъектыСистемы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаВладельцаЗначения" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка владельца значения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.КолонкиОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИсточник" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка источник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.КолонкиОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗначениеИсточника" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение источника</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.КолонкиОбъектов</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Уровень" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уровень</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сохранять" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранять</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Таблицы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВариантОбъекта" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вариант объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВариантыОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Таблица" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ОбъектыСистемы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ввод" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ввод</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Исключить" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исключить</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КолонкаИсточник" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Колонка источник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.КолонкиОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗначениеИсточника" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение источника</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.КолонкиОбъектов</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="Уровень" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уровень</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сохранять" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сохранять</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ГУИД" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ГУИД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Источники" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Источники</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВариантОбъекта" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вариант объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВариантыОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Источник" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ОбъектыСистемы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВариантОбъектаИсточника" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вариант объекта источника</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВариантыОбъектов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Исключить" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исключить</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Уровень" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уровень</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВариантыОбъектовИсточникаВедутся" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Варианты объектов источника ведутся</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОснованияВариантОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Основания.ВариантОбъекта</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;все варианты объектов&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КолонкиВариантОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Колонки.ВариантОбъекта</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;все варианты объектов&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицыВариантОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Таблицы.ВариантОбъекта</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;все варианты объектов&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхВариантОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РазрезыДанных.ВариантОбъекта</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;все варианты объектов&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОснованияВариантОбъектаОснования</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Основания.ВариантОбъектаОснования</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;все варианты объектов&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОснованияВариантОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Основания.Уровень</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОснованияОснование</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ОснованияВариантОбъектаОснования</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Основания.Уровень</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КолонкиКолонка</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиИсключить</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиВвод</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиСохранять</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиВключитьВНаименование</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиВыводитьВСписке</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиВладелецТипаКолонки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиВладелецЗначенияКолонки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиТаблицаТиповКолонки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиТаблицаВладельцевЗначения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиКолонкаТипаКолонки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиКолонкаВладельцаЗначения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиКолонкаИсточник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиЗначениеИсточника</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Колонки.Уровень</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КолонкиВариантОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Колонки.Уровень</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицыТаблица</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицыИсключить</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицыВвод</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицыСохранять</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицыКолонкаИсточник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицыЗначениеИсточника</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Таблицы.Уровень</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицыВариантОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Таблицы.Уровень</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхРазрезДанных</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхТаблица</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхКонтрольОстатков</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхИсключить</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхКолонкаРазрезаДанных</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхКолонкаОбъекта</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхКолонкаТаблицы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РазрезыДанных.Уровень</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхВариантОбъекта</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхКолонкаРазрезаДанных</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхКолонкаОбъекта</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхКолонкаТаблицы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РазрезыДанных.Уровень</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхВариантОбъекта</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхРазрезДанных</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхТаблица</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхКонтрольОстатков</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхИсключить</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РазрезыДанных.Уровень</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">2</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КолонкиИсключить</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицыИсключить</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхИсключить</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ВестиВариантыОбъектов</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#999999</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="true" kind="StyleItem"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОснованияВариантОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ВестиВариантыОбъектов</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Основания.ВариантОбъекта</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;варианты объектов не ведутся&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КолонкиВариантОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ВестиВариантыОбъектов</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Колонки.ВариантОбъекта</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;варианты объектов не ведутся&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицыВариантОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ВестиВариантыОбъектов</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Таблицы.ВариантОбъекта</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;варианты объектов не ведутся&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхВариантОбъекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ВестиВариантыОбъектов</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РазрезыДанных.ВариантОбъекта</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;варианты объектов не ведутся&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОснованияВариантОбъектаОснования</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Основания.ВариантыОбъектовОснованияВедутся</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;варианты объектов не ведутся&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхТаблица</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхКолонкаТаблицы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РазрезыДанных.КолонкаОбъекта</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхКолонкаТаблицы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РазрезыДанных.Таблица</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Колонки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Колонки.Исключить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Колонки.ВариантОбъекта</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#999999</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="true" kind="StyleItem"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КолонкиВвод</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиСохранять</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиВключитьВНаименование</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиВыводитьВСписке</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиВладелецТипаКолонки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиВладелецЗначенияКолонки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиТаблицаТиповКолонки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиТаблицаВладельцевЗначения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиКолонкаТипаКолонки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиКолонкаВладельцаЗначения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиКолонкаИсточник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>КолонкиЗначениеИсточника</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Колонки.Исключить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#999999</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="true" kind="StyleItem"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Таблицы</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Таблицы.Исключить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Таблицы.ВариантОбъекта</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#999999</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="true" kind="StyleItem"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицыВвод</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицыСохранять</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицыКолонкаИсточник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>ТаблицыЗначениеИсточника</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Таблицы.Исключить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#999999</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="true" kind="StyleItem"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхТаблица</dcsset:field>
+					</dcsset:item>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхКонтрольОстатков</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РазрезыДанных.Исключить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#999999</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="true" kind="StyleItem"/>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>РазрезыДанныхРазрезДанных</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РазрезыДанных.Уровень</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">РазрезыДанных.РазрезДанных</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;выберите разрез данных&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицыТаблица</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Таблицы.Уровень</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Таблицы.Таблица</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;выберите таблицу&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КолонкиКолонка</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Колонки.Уровень</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Колонки.Колонка</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;выберите Колонка&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ОснованияОснование</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Основания.Уровень</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Основания.Основание</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>&lt;выберите основание&gt;</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ДобавитьВариантОбъектаОснования" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить вариант объекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить вариант объекта основания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВариантОбъектаОснования</Action>
+		</Command>
+		<Command name="ДобавитьОснование" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить основание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить основание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьОснование</Action>
+		</Command>
+		<Command name="ДобавитьВариантОбъектаРазрезаДанных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить вариант объекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить вариант объекта разреза данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВариантОбъектаРазрезаДанных</Action>
+		</Command>
+		<Command name="ДобавитьРазрезДанных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить разрез данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить разрез данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьРазрезДанных</Action>
+		</Command>
+		<Command name="ДобавитьВариантОбъектаКолонки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить вариант объекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить вариант объекта Колонки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВариантОбъектаКолонки</Action>
+		</Command>
+		<Command name="ДобавитьВариантОбъектаТаблицы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить вариант объекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить вариант объекта таблицы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВариантОбъектаТаблицы</Action>
+		</Command>
+		<Command name="ДобавитьКолонку" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить колонку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить разрез данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКолонку</Action>
+		</Command>
+		<Command name="ДобавитьТаблицу" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить таблицу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить таблицу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьТаблицу</Action>
+		</Command>
+		<Command name="ДобавитьИсточник" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить источник</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить основание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьИсточник</Action>
+		</Command>
+		<Command name="ДобавитьВариантОбъектаИсточника" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить вариант объекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить вариант объекта основания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьВариантОбъектаИсточника</Action>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>3:432a1580-c24c-463e-9f8c-0df43f129f2f</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>4:f7fb24f2-bf3e-476b-aa28-99c408b210d5</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="19">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<GraphicalSchemaField name="ГрафическаяСхемаБД" id="3">
+					<DataPath>ГрафическаяСхемаБД</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<CommandSet>
+						<ExcludedCommand>AlignBottom</ExcludedCommand>
+						<ExcludedCommand>AlignCenter</ExcludedCommand>
+						<ExcludedCommand>AlignLeft</ExcludedCommand>
+						<ExcludedCommand>AlignMiddle</ExcludedCommand>
+						<ExcludedCommand>AlignRight</ExcludedCommand>
+						<ExcludedCommand>AlignTop</ExcludedCommand>
+						<ExcludedCommand>BringToBack</ExcludedCommand>
+						<ExcludedCommand>BringToFront</ExcludedCommand>
+						<ExcludedCommand>DistributeHorizontally</ExcludedCommand>
+						<ExcludedCommand>DistributeVertically</ExcludedCommand>
+						<ExcludedCommand>EqualHeight</ExcludedCommand>
+						<ExcludedCommand>EqualSize</ExcludedCommand>
+						<ExcludedCommand>EqualWidth</ExcludedCommand>
+						<ExcludedCommand>Group</ExcludedCommand>
+						<ExcludedCommand>InsertItemActivity</ExcludedCommand>
+						<ExcludedCommand>InsertItemCompletion</ExcludedCommand>
+						<ExcludedCommand>InsertItemCondition</ExcludedCommand>
+						<ExcludedCommand>InsertItemDecoration</ExcludedCommand>
+						<ExcludedCommand>InsertItemDecorativeLine</ExcludedCommand>
+						<ExcludedCommand>InsertItemJoin</ExcludedCommand>
+						<ExcludedCommand>InsertItemProcessing</ExcludedCommand>
+						<ExcludedCommand>InsertItemSplit</ExcludedCommand>
+						<ExcludedCommand>InsertItemStart</ExcludedCommand>
+						<ExcludedCommand>InsertItemSubBusinessProcess</ExcludedCommand>
+						<ExcludedCommand>InsertItemSwitch</ExcludedCommand>
+						<ExcludedCommand>SendBackward</ExcludedCommand>
+						<ExcludedCommand>SendForward</ExcludedCommand>
+						<ExcludedCommand>Ungroup</ExcludedCommand>
+					</CommandSet>
+					<Width>1</Width>
+					<Height>1</Height>
+					<Edit>false</Edit>
+					<ContextMenu name="ГрафическаяСхемаБДКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ГрафическаяСхемаБДРасширеннаяПодсказка" id="5"/>
+					<Events>
+						<Event name="Selection">ГрафическаяСхемаБДВыбор</Event>
+						<Event name="OnActivate">ГрафическаяСхемаБДПриАктивизации</Event>
+					</Events>
+				</GraphicalSchemaField>
+				<PictureDecoration name="ДекорацияПолоса" id="16">
+					<Visible>false</Visible>
+					<Width>1</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация полоса</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Stretch</PictureSize>
+					<ContextMenu name="ДекорацияПолосаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДекорацияПолосаРасширеннаяПодсказка" id="18"/>
+				</PictureDecoration>
+				<UsualGroup name="Группа1" id="11">
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<HorizontalAlign>Center</HorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="12"/>
+					<ChildItems>
+						<PictureDecoration name="ДекорацияВывестиСтруктуруБД" id="13">
+							<Width>2</Width>
+							<Height>1</Height>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация вывести структуру БД</v8:content>
+								</v8:item>
+							</Title>
+							<Hyperlink>true</Hyperlink>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Ref>StdPicture.DataSearch</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ДекорацияВывестиСтруктуруБДКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ДекорацияВывестиСтруктуруБДРасширеннаяПодсказка" id="15"/>
+							<Events>
+								<Event name="Click">ВывестиСтруктуруБД</Event>
+							</Events>
+						</PictureDecoration>
+						<TrackBarField name="МасштабФорма" id="8">
+							<DataPath>МасштабФорма</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>1</Width>
+							<Height>1</Height>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<MaxValue>9</MaxValue>
+							<LargeStep>5</LargeStep>
+							<MarkingStep>1</MarkingStep>
+							<Orientation>Vertical</Orientation>
+							<MarkingAppearance>DontShow</MarkingAppearance>
+							<ContextMenu name="МасштабФормаКонтекстноеМеню" id="9"/>
+							<ExtendedTooltip name="МасштабФормаРасширеннаяПодсказка" id="10"/>
+							<Events>
+								<Event name="OnChange">МасштабФормаПриИзменении</Event>
+							</Events>
+						</TrackBarField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.АнализСтруктурыБД</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ГрафическаяСхемаБД" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Графическая схема БД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/graphscheme">d5p1:FlowchartContextType</v8:Type>
+			</Type>
+			<Settings xmlns:d4p1="http://v8.1c.ru/8.2/data/graphscheme" xsi:type="d4p1:FlowchartContextType">
+				<d4p1:backColor>style:FieldBackColor</d4p1:backColor>
+				<d4p1:enableGrid>false</d4p1:enableGrid>
+				<d4p1:drawGridMode>Dots</d4p1:drawGridMode>
+				<d4p1:gridHorizontalStep>10</d4p1:gridHorizontalStep>
+				<d4p1:gridVerticalStep>10</d4p1:gridVerticalStep>
+				<d4p1:bpUUID>00000000-0000-0000-0000-000000000000</d4p1:bpUUID>
+				<d4p1:useOutput>Auto</d4p1:useOutput>
+				<d4p1:printPropItem>
+					<d4p1:key>6</d4p1:key>
+					<d4p1:val>10</d4p1:val>
+				</d4p1:printPropItem>
+				<d4p1:printPropItem>
+					<d4p1:key>7</d4p1:key>
+					<d4p1:val>10</d4p1:val>
+				</d4p1:printPropItem>
+				<d4p1:printPropItem>
+					<d4p1:key>8</d4p1:key>
+					<d4p1:val>10</d4p1:val>
+				</d4p1:printPropItem>
+				<d4p1:printPropItem>
+					<d4p1:key>9</d4p1:key>
+					<d4p1:val>10</d4p1:val>
+				</d4p1:printPropItem>
+				<d4p1:printPropItem>
+					<d4p1:key>13</d4p1:key>
+					<d4p1:val>0</d4p1:val>
+				</d4p1:printPropItem>
+				<d4p1:printPropItem>
+					<d4p1:key>16</d4p1:key>
+					<d4p1:val>0</d4p1:val>
+				</d4p1:printPropItem>
+			</Settings>
+		</Attribute>
+		<Attribute name="Линии" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИдентификаторКолонка" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторОбъектСистемыВариантОбъекта" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объект системы вариант объекта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторОбъектСистемы" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объект системы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сортировка" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сортировка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторЛинии" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор линии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторОбъектСистемыКонец" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объект системы конец</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдентификаторОбъектСистемыВариантОбъектаКонец" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор объект системы вариант объекта конец</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИзмененныеЭлементы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Измененные элементы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="МасштабФорма" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Масштаб форма</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбъектыСистемыВариантыОбъектовРазрезыДанных" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты системы варианты объектов разрезы данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Идентификатор" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идентификатор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбъектСистемыВариантОбъектаРазрезДанных" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект системы вариант объекта разрез данных</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВариантыОбъектов</v8:Type>
+						<v8:Type>cfg:CatalogRef.РазрезыДанных</v8:Type>
+						<v8:Type>cfg:ChartOfCharacteristicTypesRef.КолонкиОбъектов</v8:Type>
+						<v8:Type>cfg:CatalogRef.ОбъектыСистемы</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВывестиСтруктуруБД" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести структуру БД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывести структуру БД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВывестиСтруктуруБД</Action>
+		</Command>
+	</Commands>
+</Form>
