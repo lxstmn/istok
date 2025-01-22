@@ -193,8 +193,8 @@
 		<Metadata name="CommonModule.Алгоритмы.Module" id="b532c3aa-c583-4b05-933e-3c9307044f25.0" configVersion="81473dfe34c81c45915ffe2760564fcb00000000"/>
 		<Metadata name="CommonModule.РаботаСГС" id="4a18dcc8-f569-4507-adea-38745f07e610" configVersion="8413e5d42a711249bf4fc9d9dab2844e00000000"/>
 		<Metadata name="CommonModule.РаботаСГС.Module" id="4a18dcc8-f569-4507-adea-38745f07e610.0" configVersion="5ce86be3b7b1944c9ec7bc421a5fc60800000000"/>
-		<Metadata name="CommonModule.РаботаСОбъектомНаСервере" id="ee9aa829-3218-4225-bd94-df188bb216bc" configVersion="f4ef1e5300137b44b2b9e481dcb8b1e600000000"/>
-		<Metadata name="CommonModule.РаботаСОбъектомНаСервере.Module" id="ee9aa829-3218-4225-bd94-df188bb216bc.0" configVersion="bbce8cc8bfc3c1459de5f56ac519544700000000"/>
+		<Metadata name="CommonModule.РаботаСОбъектомНаСервере" id="ee9aa829-3218-4225-bd94-df188bb216bc" configVersion="53b9eb506946804c88905b3d5e6a1b4c00000000"/>
+		<Metadata name="CommonModule.РаботаСОбъектомНаСервере.Module" id="ee9aa829-3218-4225-bd94-df188bb216bc.0" configVersion="f4ce8cb6aef96c46a08835f8f7e6e18c00000000"/>
 		<Metadata name="CommonModule.РаботаСФормойНаСервере" id="c125ffe6-e1e7-4f85-8702-4e3f15254c83" configVersion="2ba11977842c2a449432555fa0a5407400000000"/>
 		<Metadata name="CommonModule.РаботаСФормойНаСервере.Module" id="c125ffe6-e1e7-4f85-8702-4e3f15254c83.0" configVersion="7948e5ab7d86a441ba6f574aad0af47800000000"/>
 		<Metadata name="Configuration.Исток" id="5069b8fa-ee83-456a-bbdc-757d73ee9b5f" configVersion="936c7136e344494d87c5c95aec1aa8cb00000000"/>
