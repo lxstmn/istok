@@ -211,6 +211,12 @@
 						<InputField name="Автор" id="68">
 							<DataPath>Объект.Автор</DataPath>
 							<ReadOnly>true</ReadOnly>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя и идентификатор пользователя</v8:content>
+								</v8:item>
+							</ToolTip>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MaxWidth>30</MaxWidth>
@@ -224,8 +230,8 @@
 							<ContextMenu name="АвторКонтекстноеМеню" id="69"/>
 							<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="70"/>
 						</InputField>
-						<InputField name="ИдентификаторОбщейТранзакции" id="89">
-							<DataPath>Объект.ИдентификаторОбщейТранзакции</DataPath>
+						<InputField name="ИдентификаторТранзакции" id="89">
+							<DataPath>Объект.ИдентификаторТранзакции</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<Title>
 								<v8:item>
@@ -236,7 +242,7 @@
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>&lt;элемент не связан с другими&gt;</v8:content>
+									<v8:content>Идентификатор общей транзакции. Устанавливается одно значения для разных объектов, проведенных в одной транзакции и зависящих друг от друга.</v8:content>
 								</v8:item>
 							</ToolTip>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
@@ -249,8 +255,8 @@
 									<v8:content>&lt;элемент не связан с другими&gt;</v8:content>
 								</v8:item>
 							</InputHint>
-							<ContextMenu name="ИдентификаторОбщейТранзакцииКонтекстноеМеню" id="90"/>
-							<ExtendedTooltip name="ИдентификаторОбщейТранзакцииРасширеннаяПодсказка" id="91"/>
+							<ContextMenu name="ИдентификаторТранзакцииКонтекстноеМеню" id="90"/>
+							<ExtendedTooltip name="ИдентификаторТранзакцииРасширеннаяПодсказка" id="91"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>

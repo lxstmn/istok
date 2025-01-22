@@ -437,11 +437,11 @@
 			</Attribute>
 			<Attribute uuid="2e5f8729-f0e9-49dc-b658-e4570df178cd">
 				<Properties>
-					<Name>ИдентификаторОбщейТранзакции</Name>
+					<Name>ИдентификаторТранзакции</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Идентификатор общей транзакции</v8:content>
+							<v8:content>Идентификатор транзакции</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
