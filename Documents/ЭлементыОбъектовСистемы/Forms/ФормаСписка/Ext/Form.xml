@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
 	<SaveWindowSettings>false</SaveWindowSettings>
+	<Group>Vertical</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -15,6 +17,7 @@
 			</Title>
 			<VerticalStretch>false</VerticalStretch>
 			<Group>Vertical</Group>
+			<Representation>WeakSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>
@@ -41,6 +44,7 @@
 			</ChoiceParameters>
 			<ContextMenu name="ОбъектСистемыКонтекстноеМеню" id="41"/>
 			<ExtendedTooltip name="ОбъектСистемыРасширеннаяПодсказка" id="42"/>
+			<SelectedItemsActionsPanel name="ОбъектСистемыПанельДействийВыделенныхСтрок" id="52"/>
 			<Events>
 				<Event name="OnChange">ОбъектСистемыПриИзменении</Event>
 			</Events>
@@ -51,7 +55,7 @@
 			<DefaultItem>true</DefaultItem>
 			<Width>1</Width>
 			<Height>2</Height>
-			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<RowSelectionMode>Cell</RowSelectionMode>
 			<InitialTreeView>ExpandTopLevel</InitialTreeView>
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>Список</DataPath>
@@ -100,6 +104,7 @@
 				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
+			<SelectedItemsActionsPanel name="СписокПанельДействийВыделенныхСтрок" id="53"/>
 			<Events>
 				<Event name="OnUpdateUserSettingSetAtServer">СписокПриОбновленииСоставаПользовательскихНастроекНаСервере</Event>
 			</Events>
@@ -110,6 +115,7 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="СсылкаКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="18"/>
+					<SelectedItemsActionsPanel name="СсылкаПанельДействийВыделенныхСтрок" id="54"/>
 				</LabelField>
 				<LabelField name="Дата" id="19">
 					<DataPath>Список.Дата</DataPath>
@@ -118,6 +124,7 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="21"/>
+					<SelectedItemsActionsPanel name="ДатаПанельДействийВыделенныхСтрок" id="55"/>
 				</LabelField>
 				<LabelField name="Номер" id="22">
 					<DataPath>Список.Номер</DataPath>
@@ -131,6 +138,7 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="НомерКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="24"/>
+					<SelectedItemsActionsPanel name="НомерПанельДействийВыделенныхСтрок" id="56"/>
 				</LabelField>
 				<LabelField name="ВариантОбъекта" id="49">
 					<DataPath>~Список.Событие</DataPath>
@@ -138,6 +146,7 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ВариантОбъектаКонтекстноеМеню" id="50"/>
 					<ExtendedTooltip name="ВариантОбъектаРасширеннаяПодсказка" id="51"/>
+					<SelectedItemsActionsPanel name="ВариантОбъектаПанельДействийВыделенныхСтрок" id="57"/>
 				</LabelField>
 				<LabelField name="Основание" id="31">
 					<DataPath>Список.Основание</DataPath>
@@ -146,6 +155,7 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="ОснованиеКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="33"/>
+					<SelectedItemsActionsPanel name="ОснованиеПанельДействийВыделенныхСтрок" id="58"/>
 				</LabelField>
 			</ChildItems>
 		</Table>

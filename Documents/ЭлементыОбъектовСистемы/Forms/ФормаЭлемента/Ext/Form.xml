@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
 	<SaveWindowSettings>false</SaveWindowSettings>
+	<Group>Vertical</Group>
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Regular</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
@@ -58,6 +60,7 @@
 					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 					<ContextMenu name="ОбъектСистемыТипОбъектаКонтекстноеМеню" id="78"/>
 					<ExtendedTooltip name="ОбъектСистемыТипОбъектаРасширеннаяПодсказка" id="79"/>
+					<SelectedItemsActionsPanel name="ОбъектСистемыТипОбъектаПанельДействийВыделенныхСтрок" id="100"/>
 				</LabelField>
 				<InputField name="ОбъектСистемы" id="41">
 					<DataPath>Объект.ОбъектСистемы</DataPath>
@@ -67,6 +70,7 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ОбъектСистемыКонтекстноеМеню" id="42"/>
 					<ExtendedTooltip name="ОбъектСистемыРасширеннаяПодсказка" id="43"/>
+					<SelectedItemsActionsPanel name="ОбъектСистемыПанельДействийВыделенныхСтрок" id="101"/>
 					<Events>
 						<Event name="OnChange">ОбъектСистемыПриИзменении</Event>
 					</Events>
@@ -84,6 +88,7 @@
 					</InputHint>
 					<ContextMenu name="ВариантОбъектаКонтекстноеМеню" id="48"/>
 					<ExtendedTooltip name="ВариантОбъектаРасширеннаяПодсказка" id="49"/>
+					<SelectedItemsActionsPanel name="ВариантОбъектаПанельДействийВыделенныхСтрок" id="102"/>
 					<Events>
 						<Event name="OnChange">ВариантОбъектаПриИзменении</Event>
 					</Events>
@@ -96,6 +101,7 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ИсточникКонтекстноеМеню" id="98"/>
 					<ExtendedTooltip name="ИсточникРасширеннаяПодсказка" id="99"/>
+					<SelectedItemsActionsPanel name="ИсточникПанельДействийВыделенныхСтрок" id="103"/>
 				</InputField>
 				<InputField name="Основание" id="50">
 					<DataPath>Объект.Основание</DataPath>
@@ -105,6 +111,7 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ОснованиеКонтекстноеМеню" id="51"/>
 					<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="52"/>
+					<SelectedItemsActionsPanel name="ОснованиеПанельДействийВыделенныхСтрок" id="104"/>
 				</InputField>
 				<InputField name="Корректировка" id="86">
 					<DataPath>Объект.Корректировка</DataPath>
@@ -114,6 +121,7 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КорректировкаКонтекстноеМеню" id="87"/>
 					<ExtendedTooltip name="КорректировкаРасширеннаяПодсказка" id="88"/>
+					<SelectedItemsActionsPanel name="КорректировкаПанельДействийВыделенныхСтрок" id="105"/>
 				</InputField>
 				<InputField name="Версия" id="83">
 					<DataPath>Объект.Версия</DataPath>
@@ -123,6 +131,7 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ВерсияКонтекстноеМеню" id="84"/>
 					<ExtendedTooltip name="ВерсияРасширеннаяПодсказка" id="85"/>
+					<SelectedItemsActionsPanel name="ВерсияПанельДействийВыделенныхСтрок" id="106"/>
 				</InputField>
 				<InputField name="Копия" id="57">
 					<DataPath>Копия</DataPath>
@@ -132,6 +141,7 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КопияКонтекстноеМеню" id="58"/>
 					<ExtendedTooltip name="КопияРасширеннаяПодсказка" id="59"/>
+					<SelectedItemsActionsPanel name="КопияПанельДействийВыделенныхСтрок" id="107"/>
 				</InputField>
 				<LabelDecoration name="ДекорацияДляРастяжки" id="74">
 					<AutoMaxWidth>false</AutoMaxWidth>
@@ -146,6 +156,7 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="64"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="65"/>
+					<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="108"/>
 				</InputField>
 				<InputField name="Номер" id="4">
 					<DataPath>Объект.Number</DataPath>
@@ -156,21 +167,25 @@
 						</v8:item>
 					</Title>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<Width>12</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="НомерКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="6"/>
+					<SelectedItemsActionsPanel name="НомерПанельДействийВыделенныхСтрок" id="109"/>
 				</InputField>
 				<InputField name="Дата" id="7">
 					<DataPath>Объект.Date</DataPath>
 					<WarningOnEditRepresentation>Show</WarningOnEditRepresentation>
 					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<Width>12</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ChoiceButton>false</ChoiceButton>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="9"/>
+					<SelectedItemsActionsPanel name="ДатаПанельДействийВыделенныхСтрок" id="110"/>
 				</InputField>
 				<UsualGroup name="Группа1" id="92">
 					<Title>
@@ -207,16 +222,11 @@
 							</InputHint>
 							<ContextMenu name="ГУИДКонтекстноеМеню" id="95"/>
 							<ExtendedTooltip name="ГУИДРасширеннаяПодсказка" id="96"/>
+							<SelectedItemsActionsPanel name="ГУИДПанельДействийВыделенныхСтрок" id="111"/>
 						</InputField>
 						<InputField name="Автор" id="68">
 							<DataPath>Объект.Автор</DataPath>
 							<ReadOnly>true</ReadOnly>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Имя и идентификатор пользователя</v8:content>
-								</v8:item>
-							</ToolTip>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MaxWidth>30</MaxWidth>
@@ -229,9 +239,10 @@
 							</InputHint>
 							<ContextMenu name="АвторКонтекстноеМеню" id="69"/>
 							<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="70"/>
+							<SelectedItemsActionsPanel name="АвторПанельДействийВыделенныхСтрок" id="112"/>
 						</InputField>
-						<InputField name="ИдентификаторТранзакции" id="89">
-							<DataPath>Объект.ИдентификаторТранзакции</DataPath>
+						<InputField name="ИдентификаторОбщейТранзакции" id="89">
+							<DataPath>Объект.ИдентификаторОбщейТранзакции</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<Title>
 								<v8:item>
@@ -242,7 +253,7 @@
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Идентификатор общей транзакции. Устанавливается одно значения для разных объектов, проведенных в одной транзакции и зависящих друг от друга.</v8:content>
+									<v8:content>&lt;элемент не связан с другими&gt;</v8:content>
 								</v8:item>
 							</ToolTip>
 							<ToolTipRepresentation>Button</ToolTipRepresentation>
@@ -255,8 +266,9 @@
 									<v8:content>&lt;элемент не связан с другими&gt;</v8:content>
 								</v8:item>
 							</InputHint>
-							<ContextMenu name="ИдентификаторТранзакцииКонтекстноеМеню" id="90"/>
-							<ExtendedTooltip name="ИдентификаторТранзакцииРасширеннаяПодсказка" id="91"/>
+							<ContextMenu name="ИдентификаторОбщейТранзакцииКонтекстноеМеню" id="90"/>
+							<ExtendedTooltip name="ИдентификаторОбщейТранзакцииРасширеннаяПодсказка" id="91"/>
+							<SelectedItemsActionsPanel name="ИдентификаторОбщейТранзакцииПанельДействийВыделенныхСтрок" id="113"/>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>

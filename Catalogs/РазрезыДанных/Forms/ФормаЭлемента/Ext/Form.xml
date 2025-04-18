@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
@@ -15,9 +17,11 @@
 				<InputField name="Код" id="1">
 					<DataPath>Объект.Code</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+					<SelectedItemsActionsPanel name="КодПанельДействийВыделенныхСтрок" id="71"/>
 				</InputField>
 				<LabelDecoration name="ЦветXML" id="44">
 					<Width>30</Width>
@@ -38,39 +42,80 @@
 				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Наименование" id="4">
-			<DataPath>Объект.Description</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-		</InputField>
 		<UsualGroup name="Группа2" id="52">
+			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="53"/>
 			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+					<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="72"/>
+				</InputField>
 				<InputField name="ИмяРегистра" id="10">
 					<DataPath>Объект.ИмяРегистра</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<Width>19</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ИмяРегистраКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="ИмяРегистраРасширеннаяПодсказка" id="12"/>
+					<SelectedItemsActionsPanel name="ИмяРегистраПанельДействийВыделенныхСтрок" id="73"/>
+					<Events>
+						<Event name="OnChange">ИмяРегистраПриИзменении</Event>
+					</Events>
 				</InputField>
-				<CheckBoxField name="НеЗаполнятьРазрезДанных" id="49">
-					<DataPath>Объект.НеЗаполнятьРазрезДанных</DataPath>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="НеЗаполнятьРазрезДанныхКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="НеЗаполнятьРазрезДанныхРасширеннаяПодсказка" id="51"/>
-				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="57">
+			<ReadOnly>true</ReadOnly>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<InputField name="ТипРегистра" id="68">
+					<DataPath>ТипРегистра</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТипРегистраКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ТипРегистраРасширеннаяПодсказка" id="70"/>
+					<SelectedItemsActionsPanel name="ТипРегистраПанельДействийВыделенныхСтрок" id="74"/>
+				</InputField>
+				<InputField name="РежимЗаписи" id="65">
+					<DataPath>РежимЗаписи</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РежимЗаписиКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="РежимЗаписиРасширеннаяПодсказка" id="67"/>
+					<SelectedItemsActionsPanel name="РежимЗаписиПанельДействийВыделенныхСтрок" id="75"/>
+				</InputField>
+				<InputField name="Периодичность" id="62">
+					<DataPath>Периодичность</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПериодичностьКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ПериодичностьРасширеннаяПодсказка" id="64"/>
+					<SelectedItemsActionsPanel name="ПериодичностьПанельДействийВыделенныхСтрок" id="76"/>
+				</InputField>
+				<InputField name="ВидРегистра" id="59">
+					<DataPath>ВидРегистра</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВидРегистраКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ВидРегистраРасширеннаяПодсказка" id="61"/>
+					<SelectedItemsActionsPanel name="ВидРегистраПанельДействийВыделенныхСтрок" id="77"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<Table name="КолонокиРазрезаДанных" id="13">
 			<Representation>List</Representation>
 			<Width>1</Width>
 			<Height>2</Height>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
@@ -103,36 +148,59 @@
 				<ContextMenu name="КолонокиРазрезаДанныхУправлениеПоискомКонтекстноеМеню" id="24"/>
 				<ExtendedTooltip name="КолонокиРазрезаДанныхУправлениеПоискомРасширеннаяПодсказка" id="25"/>
 			</SearchControlAddition>
+			<SelectedItemsActionsPanel name="КолонокиРазрезаДанныхПанельДействийВыделенныхСтрок" id="78"/>
 			<ChildItems>
 				<LabelField name="КолонокиРазрезаДанныхНомерСтроки" id="26">
 					<DataPath>Объект.КолонокиРазрезаДанных.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<Width>1</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ContextMenu name="КолонокиРазрезаДанныхНомерСтрокиКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="КолонокиРазрезаДанныхНомерСтрокиРасширеннаяПодсказка" id="28"/>
+					<SelectedItemsActionsPanel name="КолонокиРазрезаДанныхНомерСтрокиПанельДействийВыделенныхСтрок" id="79"/>
 				</LabelField>
 				<InputField name="КолонокиРазрезаДанныхКолонкаРазрезаДанных" id="32">
 					<DataPath>Объект.КолонокиРазрезаДанных.КолонкаРазрезаДанных</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<Width>1</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КолонокиРазрезаДанныхКолонкаРазрезаДанныхКонтекстноеМеню" id="33"/>
 					<ExtendedTooltip name="КолонокиРазрезаДанныхКолонкаРазрезаДанныхРасширеннаяПодсказка" id="34"/>
+					<SelectedItemsActionsPanel name="КолонокиРазрезаДанныхКолонкаРазрезаДанныхПанельДействийВыделенныхСтрок" id="80"/>
 				</InputField>
+				<CheckBoxField name="КолонокиРазрезаДанныхВключитьВОтбор" id="54">
+					<DataPath>Объект.КолонокиРазрезаДанных.ВключитьВОтбор</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполняется только для независимых регистров сведений</v8:content>
+						</v8:item>
+					</ToolTip>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КолонокиРазрезаДанныхВключитьВОтборКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="КолонокиРазрезаДанныхВключитьВОтборРасширеннаяПодсказка" id="56"/>
+					<SelectedItemsActionsPanel name="КолонокиРазрезаДанныхВключитьВОтборПанельДействийВыделенныхСтрок" id="81"/>
+				</CheckBoxField>
 				<InputField name="КолонокиРазрезаДанныхИмяКолонкиРегистра" id="29">
 					<DataPath>Объект.КолонокиРазрезаДанных.ИмяКолонкиРегистра</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<Width>1</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КолонокиРазрезаДанныхИмяКолонкиРегистраКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="КолонокиРазрезаДанныхИмяКолонкиРегистраРасширеннаяПодсказка" id="31"/>
+					<SelectedItemsActionsPanel name="КолонокиРазрезаДанныхИмяКолонкиРегистраПанельДействийВыделенныхСтрок" id="82"/>
 				</InputField>
 				<InputField name="КолонокиРазрезаДанныхТипКолонкиРегистра" id="38">
 					<DataPath>Объект.КолонокиРазрезаДанных.ТипКолонкиРегистра</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<Width>1</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<ListChoiceMode>true</ListChoiceMode>
@@ -219,6 +287,7 @@
 					</ChoiceList>
 					<ContextMenu name="КолонокиРазрезаДанныхТипКолонкиРегистраКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="КолонокиРазрезаДанныхТипКолонкиРегистраРасширеннаяПодсказка" id="40"/>
+					<SelectedItemsActionsPanel name="КолонокиРазрезаДанныхТипКолонкиРегистраПанельДействийВыделенныхСтрок" id="83"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -229,6 +298,7 @@
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ОписаниеКонтекстноеМеню" id="36"/>
 			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="37"/>
+			<SelectedItemsActionsPanel name="ОписаниеПанельДействийВыделенныхСтрок" id="85"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>
@@ -238,6 +308,66 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТипРегистра" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип регистра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Периодичность" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Периодичность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимЗаписи" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидРегистра" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид регистра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
@@ -387,6 +517,36 @@
 								<v8:content>Реквизит</v8:content>
 							</v8:item>
 						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>КолонокиРазрезаДанныхВключитьВОтбор</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.КолонокиРазрезаДанных.ТипКолонкиРегистра</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">3</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Отображать</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 					</dcscor:item>
 				</dcsset:appearance>
 			</dcsset:item>

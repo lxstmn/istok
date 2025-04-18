@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
-	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
@@ -14,50 +15,222 @@
 							<v8:content>Основное</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="44"/>
 					<ChildItems>
 						<InputField name="Код" id="1">
 							<DataPath>Объект.Code</DataPath>
 							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+							<SelectedItemsActionsPanel name="КодПанельДействийВыделенныхСтрок" id="104"/>
 						</InputField>
 						<InputField name="Наименование" id="4">
 							<DataPath>Объект.Description</DataPath>
 							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+							<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="105"/>
 						</InputField>
 						<InputField name="Модуль" id="32">
 							<DataPath>Объект.ОбщийМодуль</DataPath>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="МодульКонтекстноеМеню" id="33"/>
 							<ExtendedTooltip name="МодульРасширеннаяПодсказка" id="34"/>
+							<SelectedItemsActionsPanel name="МодульПанельДействийВыделенныхСтрок" id="106"/>
 						</InputField>
 						<InputField name="АдресАлгоритма" id="7">
 							<DataPath>Объект.ПроцедураМодуля</DataPath>
 							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="АдресАлгоритмаКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="АдресАлгоритмаРасширеннаяПодсказка" id="9"/>
+							<SelectedItemsActionsPanel name="АдресАлгоритмаПанельДействийВыделенныхСтрок" id="107"/>
 						</InputField>
 						<InputField name="ПараметрыПроцедуры" id="35">
 							<DataPath>Объект.ПараметрыПроцедуры</DataPath>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ПараметрыПроцедурыКонтекстноеМеню" id="36"/>
 							<ExtendedTooltip name="ПараметрыПроцедурыРасширеннаяПодсказка" id="37"/>
+							<SelectedItemsActionsPanel name="ПараметрыПроцедурыПанельДействийВыделенныхСтрок" id="108"/>
 						</InputField>
 						<InputField name="Описание" id="10">
 							<DataPath>Объект.Описание</DataPath>
 							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<MultiLine>true</MultiLine>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ОписаниеКонтекстноеМеню" id="11"/>
 							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="12"/>
+							<SelectedItemsActionsPanel name="ОписаниеПанельДействийВыделенныхСтрок" id="109"/>
 						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="Группа4" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры алгоритма</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<Table name="ПараметрыАлгоритма" id="49">
+							<Height>1</Height>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ПараметрыАлгоритма</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ПараметрыАлгоритмаКонтекстноеМеню" id="50"/>
+							<AutoCommandBar name="ПараметрыАлгоритмаКоманднаяПанель" id="51"/>
+							<ExtendedTooltip name="ПараметрыАлгоритмаРасширеннаяПодсказка" id="52"/>
+							<SearchStringAddition name="ПараметрыАлгоритмаСтрокаПоиска" id="53">
+								<AdditionSource>
+									<Item>ПараметрыАлгоритма</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыАлгоритмаСтрокаПоискаКонтекстноеМеню" id="54"/>
+								<ExtendedTooltip name="ПараметрыАлгоритмаСтрокаПоискаРасширеннаяПодсказка" id="55"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПараметрыАлгоритмаСостояниеПросмотра" id="56">
+								<AdditionSource>
+									<Item>ПараметрыАлгоритма</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыАлгоритмаСостояниеПросмотраКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="ПараметрыАлгоритмаСостояниеПросмотраРасширеннаяПодсказка" id="58"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПараметрыАлгоритмаУправлениеПоиском" id="59">
+								<AdditionSource>
+									<Item>ПараметрыАлгоритма</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПараметрыАлгоритмаУправлениеПоискомКонтекстноеМеню" id="60"/>
+								<ExtendedTooltip name="ПараметрыАлгоритмаУправлениеПоискомРасширеннаяПодсказка" id="61"/>
+							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ПараметрыАлгоритмаПанельДействийВыделенныхСтрок" id="110"/>
+							<ChildItems>
+								<ColumnGroup name="ПараметрыАлгоритмаГруппа4" id="159">
+									<ExtendedTooltip name="ПараметрыАлгоритмаГруппа4РасширеннаяПодсказка" id="160"/>
+									<ChildItems>
+										<InputField name="ПараметрыАлгоритмаИмяГруппыПараметров" id="65">
+											<DataPath>Объект.ПараметрыАлгоритма.ИмяГруппыПараметров</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
+											<Width>1</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПараметрыАлгоритмаИмяГруппыПараметровКонтекстноеМеню" id="66"/>
+											<ExtendedTooltip name="ПараметрыАлгоритмаИмяГруппыПараметровРасширеннаяПодсказка" id="67"/>
+											<SelectedItemsActionsPanel name="ПараметрыАлгоритмаИмяГруппыПараметровПанельДействийВыделенныхСтрок" id="112"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ПараметрыАлгоритмаГруппа2" id="155">
+									<ExtendedTooltip name="ПараметрыАлгоритмаГруппа2РасширеннаяПодсказка" id="156"/>
+									<ChildItems>
+										<InputField name="ПараметрыАлгоритмаПараметр1" id="125">
+											<DataPath>Объект.ПараметрыАлгоритма.Параметр1</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПараметрыАлгоритмаПараметр1КонтекстноеМеню" id="126"/>
+											<ExtendedTooltip name="ПараметрыАлгоритмаПараметр1РасширеннаяПодсказка" id="127"/>
+											<SelectedItemsActionsPanel name="ПараметрыАлгоритмаПараметр1ПанельДействийВыделенныхСтрок" id="128"/>
+										</InputField>
+										<InputField name="ПараметрыАлгоритмаПараметр2" id="129">
+											<DataPath>Объект.ПараметрыАлгоритма.Параметр2</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПараметрыАлгоритмаПараметр2КонтекстноеМеню" id="130"/>
+											<ExtendedTooltip name="ПараметрыАлгоритмаПараметр2РасширеннаяПодсказка" id="131"/>
+											<SelectedItemsActionsPanel name="ПараметрыАлгоритмаПараметр2ПанельДействийВыделенныхСтрок" id="132"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ПараметрыАлгоритмаГруппа5" id="165">
+									<ExtendedTooltip name="ПараметрыАлгоритмаГруппа5РасширеннаяПодсказка" id="166"/>
+									<ChildItems>
+										<InputField name="ПараметрыАлгоритмаПараметр3" id="133">
+											<DataPath>Объект.ПараметрыАлгоритма.Параметр3</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПараметрыАлгоритмаПараметр3КонтекстноеМеню" id="134"/>
+											<ExtendedTooltip name="ПараметрыАлгоритмаПараметр3РасширеннаяПодсказка" id="135"/>
+											<SelectedItemsActionsPanel name="ПараметрыАлгоритмаПараметр3ПанельДействийВыделенныхСтрок" id="136"/>
+										</InputField>
+										<InputField name="ПараметрыАлгоритмаПараметр4" id="137">
+											<DataPath>Объект.ПараметрыАлгоритма.Параметр4</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПараметрыАлгоритмаПараметр4КонтекстноеМеню" id="138"/>
+											<ExtendedTooltip name="ПараметрыАлгоритмаПараметр4РасширеннаяПодсказка" id="139"/>
+											<SelectedItemsActionsPanel name="ПараметрыАлгоритмаПараметр4ПанельДействийВыделенныхСтрок" id="140"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ПараметрыАлгоритмаГруппа3" id="157">
+									<ExtendedTooltip name="ПараметрыАлгоритмаГруппа3РасширеннаяПодсказка" id="158"/>
+									<ChildItems>
+										<InputField name="ПараметрыАлгоритмаПараметр5" id="141">
+											<DataPath>Объект.ПараметрыАлгоритма.Параметр5</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПараметрыАлгоритмаПараметр5КонтекстноеМеню" id="142"/>
+											<ExtendedTooltip name="ПараметрыАлгоритмаПараметр5РасширеннаяПодсказка" id="143"/>
+											<SelectedItemsActionsPanel name="ПараметрыАлгоритмаПараметр5ПанельДействийВыделенныхСтрок" id="144"/>
+										</InputField>
+										<InputField name="ПараметрыАлгоритмаПараметр6" id="145">
+											<DataPath>Объект.ПараметрыАлгоритма.Параметр6</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПараметрыАлгоритмаПараметр6КонтекстноеМеню" id="146"/>
+											<ExtendedTooltip name="ПараметрыАлгоритмаПараметр6РасширеннаяПодсказка" id="147"/>
+											<SelectedItemsActionsPanel name="ПараметрыАлгоритмаПараметр6ПанельДействийВыделенныхСтрок" id="148"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ПараметрыАлгоритмаГруппа1" id="153">
+									<ExtendedTooltip name="ПараметрыАлгоритмаГруппа1РасширеннаяПодсказка" id="154"/>
+									<ChildItems>
+										<InputField name="ПараметрыАлгоритмаПараметр7" id="149">
+											<DataPath>Объект.ПараметрыАлгоритма.Параметр7</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПараметрыАлгоритмаПараметр7КонтекстноеМеню" id="150"/>
+											<ExtendedTooltip name="ПараметрыАлгоритмаПараметр7РасширеннаяПодсказка" id="151"/>
+											<SelectedItemsActionsPanel name="ПараметрыАлгоритмаПараметр7ПанельДействийВыделенныхСтрок" id="152"/>
+										</InputField>
+										<InputField name="ПараметрыАлгоритмаПараметр8" id="161">
+											<DataPath>Объект.ПараметрыАлгоритма.Параметр8</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПараметрыАлгоритмаПараметр8КонтекстноеМеню" id="162"/>
+											<ExtendedTooltip name="ПараметрыАлгоритмаПараметр8РасширеннаяПодсказка" id="163"/>
+											<SelectedItemsActionsPanel name="ПараметрыАлгоритмаПараметр8ПанельДействийВыделенныхСтрок" id="164"/>
+										</InputField>
+									</ChildItems>
+								</ColumnGroup>
+							</ChildItems>
+						</Table>
 					</ChildItems>
 				</Page>
 				<Page name="Группа3" id="45">
@@ -67,6 +240,8 @@
 							<v8:content>Текст алгоритма</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="46"/>
 					<ChildItems>
 						<TextDocumentField name="ТекстАлгоритма" id="38">
@@ -76,6 +251,7 @@
 							<Height>1</Height>
 							<ContextMenu name="ТекстАлгоритмаКонтекстноеМеню" id="39"/>
 							<ExtendedTooltip name="ТекстАлгоритмаРасширеннаяПодсказка" id="40"/>
+							<SelectedItemsActionsPanel name="ТекстАлгоритмаПанельДействийВыделенныхСтрок" id="124"/>
 						</TextDocumentField>
 					</ChildItems>
 				</Page>

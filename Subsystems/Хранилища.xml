@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
 	<Subsystem uuid="d179f05b-9d41-45ce-957a-6b2409b87d8f">
 		<Properties>
 			<Name>Хранилища</Name>
@@ -18,14 +18,16 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.АктивностьСтрокТаблиц</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ХранилищеЗначенийКолонокОбъектов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.С_РР_2И_1Р</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.С_РР_2И_3Р</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.С_РР_2И_2Р</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Н_ОС_1И_1Р</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Н_ОБ_1И_1Р</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Н_ОС_5И_3Р_1Р</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Н_ОБ_5И_3Р_1Р</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.С_РР_5И_3Р_1Р</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">01f30fa7-6ed1-48a4-910d-8b6bc1b19a75</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">2662b1d6-5c23-4d68-8f71-b18d20bee11c</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">7ec93046-68c9-4975-9f81-a281f341ebf3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">77869228-d6ed-418c-b8ec-fb690d9d4ed7</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УниверсальныйРС_РР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УниверсальныйРС_НР</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.УниверсальныйРН_ОС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УниверсальныйРС_НН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УниверсальныйРС_ДН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.УниверсальныйРН_ОБ</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

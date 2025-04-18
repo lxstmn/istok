@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
 	<SaveWindowSettings>false</SaveWindowSettings>
+	<Group>Vertical</Group>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
@@ -12,24 +14,30 @@
 		<InputField name="Код" id="1">
 			<DataPath>Объект.Code</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+			<SelectedItemsActionsPanel name="КодПанельДействийВыделенныхСтрок" id="49"/>
 		</InputField>
 		<InputField name="Наименование" id="4">
 			<DataPath>Объект.Description</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+			<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="50"/>
 		</InputField>
 		<InputField name="СистемноеНаименование" id="10">
 			<DataPath>Объект.СистемноеНаименование</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="СистемноеНаименованиеКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="СистемноеНаименованиеРасширеннаяПодсказка" id="12"/>
+			<SelectedItemsActionsPanel name="СистемноеНаименованиеПанельДействийВыделенныхСтрок" id="51"/>
 		</InputField>
 		<InputField name="ГУИД" id="46">
 			<DataPath>ГУИД</DataPath>
@@ -37,6 +45,7 @@
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ГУИДКонтекстноеМеню" id="47"/>
 			<ExtendedTooltip name="ГУИДРасширеннаяПодсказка" id="48"/>
+			<SelectedItemsActionsPanel name="ГУИДПанельДействийВыделенныхСтрок" id="52"/>
 		</InputField>
 		<UsualGroup name="Группа1" id="38">
 			<Group>AlwaysHorizontal</Group>
@@ -54,11 +63,13 @@
 					</ToolTip>
 					<ToolTipRepresentation>Button</ToolTipRepresentation>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<MaxWidth>23</MaxWidth>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТипЗначенияКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="ТипЗначенияРасширеннаяПодсказка" id="9"/>
+					<SelectedItemsActionsPanel name="ТипЗначенияПанельДействийВыделенныхСтрок" id="53"/>
 					<Events>
 						<Event name="OnChange">ТипЗначенияПриИзменении</Event>
 					</Events>
@@ -68,6 +79,7 @@
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ПоказыватьВерсииКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="ПоказыватьВерсииРасширеннаяПодсказка" id="37"/>
+					<SelectedItemsActionsPanel name="ПоказыватьВерсииПанельДействийВыделенныхСтрок" id="54"/>
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
@@ -76,6 +88,8 @@
 			<TitleLocation>Top</TitleLocation>
 			<Width>1</Width>
 			<Height>2</Height>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<AutoAddIncomplete>false</AutoAddIncomplete>
 			<EnableStartDrag>true</EnableStartDrag>
@@ -109,19 +123,24 @@
 				<ContextMenu name="ДоступныеОбъектыСистемыУправлениеПоискомКонтекстноеМеню" id="24"/>
 				<ExtendedTooltip name="ДоступныеОбъектыСистемыУправлениеПоискомРасширеннаяПодсказка" id="25"/>
 			</SearchControlAddition>
+			<SelectedItemsActionsPanel name="ДоступныеОбъектыСистемыПанельДействийВыделенныхСтрок" id="55"/>
 			<ChildItems>
 				<LabelField name="ДоступныеОбъектыСистемыНомерСтроки" id="26">
 					<DataPath>Объект.ДоступныеОбъектыСистемы.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ContextMenu name="ДоступныеОбъектыСистемыНомерСтрокиКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="ДоступныеОбъектыСистемыНомерСтрокиРасширеннаяПодсказка" id="28"/>
+					<SelectedItemsActionsPanel name="ДоступныеОбъектыСистемыНомерСтрокиПанельДействийВыделенныхСтрок" id="56"/>
 				</LabelField>
 				<InputField name="ДоступныеОбъектыСистемыОбъектСистемы" id="29">
 					<DataPath>Объект.ДоступныеОбъектыСистемы.ОбъектСистемы</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ДоступныеОбъектыСистемыОбъектСистемыКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ДоступныеОбъектыСистемыОбъектСистемыРасширеннаяПодсказка" id="31"/>
+					<SelectedItemsActionsPanel name="ДоступныеОбъектыСистемыОбъектСистемыПанельДействийВыделенныхСтрок" id="57"/>
 					<Events>
 						<Event name="OnChange">ДоступныеОбъектыСистемыОбъектСистемыПриИзменении</Event>
 					</Events>
@@ -129,16 +148,20 @@
 				<InputField name="ДоступныеОбъектыСистемыВариантОбъекта" id="40">
 					<DataPath>Объект.ДоступныеОбъектыСистемы.ВариантОбъекта</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ДоступныеОбъектыСистемыВариантОбъектаКонтекстноеМеню" id="41"/>
 					<ExtendedTooltip name="ДоступныеОбъектыСистемыВариантОбъектаРасширеннаяПодсказка" id="42"/>
+					<SelectedItemsActionsPanel name="ДоступныеОбъектыСистемыВариантОбъектаПанельДействийВыделенныхСтрок" id="58"/>
 				</InputField>
 				<CheckBoxField name="ДоступныеОбъектыСистемыИсключить" id="43">
 					<DataPath>Объект.ДоступныеОбъектыСистемы.Исключить</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ДоступныеОбъектыСистемыИсключитьКонтекстноеМеню" id="44"/>
 					<ExtendedTooltip name="ДоступныеОбъектыСистемыИсключитьРасширеннаяПодсказка" id="45"/>
+					<SelectedItemsActionsPanel name="ДоступныеОбъектыСистемыИсключитьПанельДействийВыделенныхСтрок" id="59"/>
 				</CheckBoxField>
 			</ChildItems>
 		</Table>
@@ -149,6 +172,7 @@
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ОписаниеКонтекстноеМеню" id="33"/>
 			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="34"/>
+			<SelectedItemsActionsPanel name="ОписаниеПанельДействийВыделенныхСтрок" id="61"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>

@@ -1,58 +1,27 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
-	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>LockOwner</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<ChildItems>
 		<InputField name="Код" id="1">
 			<DataPath>Объект.Code</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+			<SelectedItemsActionsPanel name="КодПанельДействийВыделенныхСтрок" id="182"/>
 		</InputField>
 		<InputField name="Наименование" id="4">
 			<DataPath>Объект.Description</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-		</InputField>
-		<InputField name="ОбъектСистемы" id="7">
-			<DataPath>Объект.ОбъектСистемы</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ОбъектСистемыКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="ОбъектСистемыРасширеннаяПодсказка" id="9"/>
-		</InputField>
-		<InputField name="ВариантОбъекта" id="10">
-			<DataPath>Объект.ВариантОбъекта</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ВариантОбъектаКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ВариантОбъектаРасширеннаяПодсказка" id="12"/>
-		</InputField>
-		<InputField name="КолонкаОбъекта" id="13">
-			<DataPath>Объект.КолонкаОбъекта</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="КолонкаОбъектаКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="КолонкаОбъектаРасширеннаяПодсказка" id="15"/>
-		</InputField>
-		<InputField name="ПростойТип" id="16">
-			<DataPath>Объект.ПростойТип</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<HorizontalStretch>true</HorizontalStretch>
-			<ClearButton>true</ClearButton>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ПростойТипКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="ПростойТипРасширеннаяПодсказка" id="18"/>
-		</InputField>
-		<InputField name="ЭлементОбъектаСистемы" id="108">
-			<DataPath>Объект.ЭлементОбъектаСистемы</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ЭлементОбъектаСистемыКонтекстноеМеню" id="109"/>
-			<ExtendedTooltip name="ЭлементОбъектаСистемыРасширеннаяПодсказка" id="110"/>
+			<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="183"/>
 		</InputField>
 		<Pages name="Страницы" id="22">
 			<Title>
@@ -63,68 +32,155 @@
 			</Title>
 			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="23"/>
 			<ChildItems>
-				<Page name="ГруппаЭлементыОбъектовСистемы" id="111">
+				<Page name="Группа" id="180">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Элементы объектов системы</v8:content>
+							<v8:content>Микс</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа элементы объектов системы</v8:content>
+							<v8:content>Группа</v8:content>
 						</v8:item>
 					</ToolTip>
-					<ExtendedTooltip name="ГруппаЭлементыОбъектовСистемыРасширеннаяПодсказка" id="112"/>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="181"/>
 					<ChildItems>
-						<Table name="ЭлементыОбъектовСистемы" id="113">
+						<InputField name="ТипОбъекта" id="174">
+							<DataPath>Объект.ТипОбъекта</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТипОбъектаКонтекстноеМеню" id="175"/>
+							<ExtendedTooltip name="ТипОбъектаРасширеннаяПодсказка" id="176"/>
+							<SelectedItemsActionsPanel name="ТипОбъектаПанельДействийВыделенныхСтрок" id="184"/>
+						</InputField>
+						<InputField name="ОбъектСистемы" id="7">
+							<DataPath>Объект.ОбъектСистемы</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОбъектСистемыКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ОбъектСистемыРасширеннаяПодсказка" id="9"/>
+							<SelectedItemsActionsPanel name="ОбъектСистемыПанельДействийВыделенныхСтрок" id="185"/>
+						</InputField>
+						<InputField name="ВариантОбъекта" id="10">
+							<DataPath>Объект.ВариантОбъекта</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВариантОбъектаКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ВариантОбъектаРасширеннаяПодсказка" id="12"/>
+							<SelectedItemsActionsPanel name="ВариантОбъектаПанельДействийВыделенныхСтрок" id="186"/>
+						</InputField>
+						<InputField name="РазрезДанных" id="177">
+							<DataPath>Объект.РазрезДанных</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РазрезДанныхКонтекстноеМеню" id="178"/>
+							<ExtendedTooltip name="РазрезДанныхРасширеннаяПодсказка" id="179"/>
+							<SelectedItemsActionsPanel name="РазрезДанныхПанельДействийВыделенныхСтрок" id="187"/>
+						</InputField>
+						<InputField name="КолонкаОбъекта" id="13">
+							<DataPath>Объект.КолонкаОбъекта</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КолонкаОбъектаКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="КолонкаОбъектаРасширеннаяПодсказка" id="15"/>
+							<SelectedItemsActionsPanel name="КолонкаОбъектаПанельДействийВыделенныхСтрок" id="188"/>
+						</InputField>
+						<InputField name="ПростойТип" id="16">
+							<DataPath>Объект.ПростойТип</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ClearButton>true</ClearButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПростойТипКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПростойТипРасширеннаяПодсказка" id="18"/>
+							<SelectedItemsActionsPanel name="ПростойТипПанельДействийВыделенныхСтрок" id="189"/>
+						</InputField>
+						<InputField name="ЭлементОбъектаСистемы" id="108">
+							<DataPath>Объект.ЭлементОбъектаСистемы</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ЭлементОбъектаСистемыКонтекстноеМеню" id="109"/>
+							<ExtendedTooltip name="ЭлементОбъектаСистемыРасширеннаяПодсказка" id="110"/>
+							<SelectedItemsActionsPanel name="ЭлементОбъектаСистемыПанельДействийВыделенныхСтрок" id="190"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТипыОбъектов" id="132">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Типы объектов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа типы объектов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаТипыОбъектовРасширеннаяПодсказка" id="133"/>
+					<ChildItems>
+						<Table name="ТипыОбъектов" id="134">
 							<Height>1</Height>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
-							<DataPath>Объект.ЭлементыОбъектовСистемы</DataPath>
+							<DataPath>Объект.ТипыОбъектов</DataPath>
 							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ЭлементыОбъектовСистемыКонтекстноеМеню" id="114"/>
-							<AutoCommandBar name="ЭлементыОбъектовСистемыКоманднаяПанель" id="115"/>
-							<ExtendedTooltip name="ЭлементыОбъектовСистемыРасширеннаяПодсказка" id="116"/>
-							<SearchStringAddition name="ЭлементыОбъектовСистемыСтрокаПоиска" id="117">
+							<ContextMenu name="ТипыОбъектовКонтекстноеМеню" id="135"/>
+							<AutoCommandBar name="ТипыОбъектовКоманднаяПанель" id="136"/>
+							<ExtendedTooltip name="ТипыОбъектовРасширеннаяПодсказка" id="137"/>
+							<SearchStringAddition name="ТипыОбъектовСтрокаПоиска" id="138">
 								<AdditionSource>
-									<Item>ЭлементыОбъектовСистемы</Item>
+									<Item>ТипыОбъектов</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ЭлементыОбъектовСистемыСтрокаПоискаКонтекстноеМеню" id="118"/>
-								<ExtendedTooltip name="ЭлементыОбъектовСистемыСтрокаПоискаРасширеннаяПодсказка" id="119"/>
+								<ContextMenu name="ТипыОбъектовСтрокаПоискаКонтекстноеМеню" id="139"/>
+								<ExtendedTooltip name="ТипыОбъектовСтрокаПоискаРасширеннаяПодсказка" id="140"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ЭлементыОбъектовСистемыСостояниеПросмотра" id="120">
+							<ViewStatusAddition name="ТипыОбъектовСостояниеПросмотра" id="141">
 								<AdditionSource>
-									<Item>ЭлементыОбъектовСистемы</Item>
+									<Item>ТипыОбъектов</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ЭлементыОбъектовСистемыСостояниеПросмотраКонтекстноеМеню" id="121"/>
-								<ExtendedTooltip name="ЭлементыОбъектовСистемыСостояниеПросмотраРасширеннаяПодсказка" id="122"/>
+								<ContextMenu name="ТипыОбъектовСостояниеПросмотраКонтекстноеМеню" id="142"/>
+								<ExtendedTooltip name="ТипыОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="143"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ЭлементыОбъектовСистемыУправлениеПоиском" id="123">
+							<SearchControlAddition name="ТипыОбъектовУправлениеПоиском" id="144">
 								<AdditionSource>
-									<Item>ЭлементыОбъектовСистемы</Item>
+									<Item>ТипыОбъектов</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="ЭлементыОбъектовСистемыУправлениеПоискомКонтекстноеМеню" id="124"/>
-								<ExtendedTooltip name="ЭлементыОбъектовСистемыУправлениеПоискомРасширеннаяПодсказка" id="125"/>
+								<ContextMenu name="ТипыОбъектовУправлениеПоискомКонтекстноеМеню" id="145"/>
+								<ExtendedTooltip name="ТипыОбъектовУправлениеПоискомРасширеннаяПодсказка" id="146"/>
 							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ТипыОбъектовПанельДействийВыделенныхСтрок" id="191"/>
 							<ChildItems>
-								<LabelField name="ЭлементыОбъектовСистемыНомерСтроки" id="126">
-									<DataPath>Объект.ЭлементыОбъектовСистемы.LineNumber</DataPath>
+								<LabelField name="ТипыОбъектовНомерСтроки" id="147">
+									<DataPath>Объект.ТипыОбъектов.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ЭлементыОбъектовСистемыНомерСтрокиКонтекстноеМеню" id="127"/>
-									<ExtendedTooltip name="ЭлементыОбъектовСистемыНомерСтрокиРасширеннаяПодсказка" id="128"/>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ТипыОбъектовНомерСтрокиКонтекстноеМеню" id="148"/>
+									<ExtendedTooltip name="ТипыОбъектовНомерСтрокиРасширеннаяПодсказка" id="149"/>
+									<SelectedItemsActionsPanel name="ТипыОбъектовНомерСтрокиПанельДействийВыделенныхСтрок" id="192"/>
 								</LabelField>
-								<InputField name="ЭлементыОбъектовСистемыЭлементОбъектаСистемы" id="129">
-									<DataPath>Объект.ЭлементыОбъектовСистемы.ЭлементОбъектаСистемы</DataPath>
+								<InputField name="ТипыОбъектовТипОбъекта" id="150">
+									<DataPath>Объект.ТипыОбъектов.ТипОбъекта</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ЭлементыОбъектовСистемыЭлементОбъектаСистемыКонтекстноеМеню" id="130"/>
-									<ExtendedTooltip name="ЭлементыОбъектовСистемыЭлементОбъектаСистемыРасширеннаяПодсказка" id="131"/>
+									<ContextMenu name="ТипыОбъектовТипОбъектаКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="ТипыОбъектовТипОбъектаРасширеннаяПодсказка" id="152"/>
+									<SelectedItemsActionsPanel name="ТипыОбъектовТипОбъектаПанельДействийВыделенныхСтрок" id="193"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -137,11 +193,15 @@
 							<v8:content>Объекты системы</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаОбъектыСистемыРасширеннаяПодсказка" id="25"/>
 					<ChildItems>
 						<Table name="ОбъектыСистемы" id="26">
 							<Representation>List</Representation>
 							<Height>1</Height>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -174,19 +234,24 @@
 								<ContextMenu name="ОбъектыСистемыУправлениеПоискомКонтекстноеМеню" id="37"/>
 								<ExtendedTooltip name="ОбъектыСистемыУправлениеПоискомРасширеннаяПодсказка" id="38"/>
 							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ОбъектыСистемыПанельДействийВыделенныхСтрок" id="195"/>
 							<ChildItems>
 								<LabelField name="ОбъектыСистемыНомерСтроки" id="39">
 									<DataPath>Объект.ОбъектыСистемы.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ОбъектыСистемыНомерСтрокиКонтекстноеМеню" id="40"/>
 									<ExtendedTooltip name="ОбъектыСистемыНомерСтрокиРасширеннаяПодсказка" id="41"/>
+									<SelectedItemsActionsPanel name="ОбъектыСистемыНомерСтрокиПанельДействийВыделенныхСтрок" id="196"/>
 								</LabelField>
 								<InputField name="ОбъектыСистемыОбъектСистемы" id="42">
 									<DataPath>Объект.ОбъектыСистемы.ОбъектСистемы</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ОбъектыСистемыОбъектСистемыКонтекстноеМеню" id="43"/>
 									<ExtendedTooltip name="ОбъектыСистемыОбъектСистемыРасширеннаяПодсказка" id="44"/>
+									<SelectedItemsActionsPanel name="ОбъектыСистемыОбъектСистемыПанельДействийВыделенныхСтрок" id="197"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -199,11 +264,15 @@
 							<v8:content>ВариантыОбъектов</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаВариантыОбъектовРасширеннаяПодсказка" id="46"/>
 					<ChildItems>
 						<Table name="ВариантыОбъектов" id="47">
 							<Representation>List</Representation>
 							<Height>1</Height>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -236,19 +305,100 @@
 								<ContextMenu name="ВариантыОбъектовУправлениеПоискомКонтекстноеМеню" id="58"/>
 								<ExtendedTooltip name="ВариантыОбъектовУправлениеПоискомРасширеннаяПодсказка" id="59"/>
 							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ВариантыОбъектовПанельДействийВыделенныхСтрок" id="199"/>
 							<ChildItems>
 								<LabelField name="ВариантыОбъектовНомерСтроки" id="60">
 									<DataPath>Объект.ВариантыОбъектов.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ВариантыОбъектовНомерСтрокиКонтекстноеМеню" id="61"/>
 									<ExtendedTooltip name="ВариантыОбъектовНомерСтрокиРасширеннаяПодсказка" id="62"/>
+									<SelectedItemsActionsPanel name="ВариантыОбъектовНомерСтрокиПанельДействийВыделенныхСтрок" id="200"/>
 								</LabelField>
 								<InputField name="ВариантыОбъектовВариантОбъекта" id="63">
 									<DataPath>Объект.ВариантыОбъектов.ВариантОбъекта</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ВариантыОбъектовВариантОбъектаКонтекстноеМеню" id="64"/>
 									<ExtendedTooltip name="ВариантыОбъектовВариантОбъектаРасширеннаяПодсказка" id="65"/>
+									<SelectedItemsActionsPanel name="ВариантыОбъектовВариантОбъектаПанельДействийВыделенныхСтрок" id="201"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаРазрезыДанных" id="153">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Разрезы данных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа разрезы данных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаРазрезыДанныхРасширеннаяПодсказка" id="154"/>
+					<ChildItems>
+						<Table name="РазрезыДанных" id="155">
+							<Height>1</Height>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.РазрезыДанных</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="РазрезыДанныхКонтекстноеМеню" id="156"/>
+							<AutoCommandBar name="РазрезыДанныхКоманднаяПанель" id="157"/>
+							<ExtendedTooltip name="РазрезыДанныхРасширеннаяПодсказка" id="158"/>
+							<SearchStringAddition name="РазрезыДанныхСтрокаПоиска" id="159">
+								<AdditionSource>
+									<Item>РазрезыДанных</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РазрезыДанныхСтрокаПоискаКонтекстноеМеню" id="160"/>
+								<ExtendedTooltip name="РазрезыДанныхСтрокаПоискаРасширеннаяПодсказка" id="161"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РазрезыДанныхСостояниеПросмотра" id="162">
+								<AdditionSource>
+									<Item>РазрезыДанных</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РазрезыДанныхСостояниеПросмотраКонтекстноеМеню" id="163"/>
+								<ExtendedTooltip name="РазрезыДанныхСостояниеПросмотраРасширеннаяПодсказка" id="164"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РазрезыДанныхУправлениеПоиском" id="165">
+								<AdditionSource>
+									<Item>РазрезыДанных</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РазрезыДанныхУправлениеПоискомКонтекстноеМеню" id="166"/>
+								<ExtendedTooltip name="РазрезыДанныхУправлениеПоискомРасширеннаяПодсказка" id="167"/>
+							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="РазрезыДанныхПанельДействийВыделенныхСтрок" id="203"/>
+							<ChildItems>
+								<LabelField name="РазрезыДанныхНомерСтроки" id="168">
+									<DataPath>Объект.РазрезыДанных.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="РазрезыДанныхНомерСтрокиКонтекстноеМеню" id="169"/>
+									<ExtendedTooltip name="РазрезыДанныхНомерСтрокиРасширеннаяПодсказка" id="170"/>
+									<SelectedItemsActionsPanel name="РазрезыДанныхНомерСтрокиПанельДействийВыделенныхСтрок" id="204"/>
+								</LabelField>
+								<InputField name="РазрезыДанныхРазрезДанных" id="171">
+									<DataPath>Объект.РазрезыДанных.РазрезДанных</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РазрезыДанныхРазрезДанныхКонтекстноеМеню" id="172"/>
+									<ExtendedTooltip name="РазрезыДанныхРазрезДанныхРасширеннаяПодсказка" id="173"/>
+									<SelectedItemsActionsPanel name="РазрезыДанныхРазрезДанныхПанельДействийВыделенныхСтрок" id="205"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -261,11 +411,15 @@
 							<v8:content>Колонки объектов</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаКолонкиОбъектовРасширеннаяПодсказка" id="67"/>
 					<ChildItems>
 						<Table name="КолонкиОбъектов" id="68">
 							<Representation>List</Representation>
 							<Height>1</Height>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -298,19 +452,24 @@
 								<ContextMenu name="КолонкиОбъектовУправлениеПоискомКонтекстноеМеню" id="79"/>
 								<ExtendedTooltip name="КолонкиОбъектовУправлениеПоискомРасширеннаяПодсказка" id="80"/>
 							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="КолонкиОбъектовПанельДействийВыделенныхСтрок" id="207"/>
 							<ChildItems>
 								<LabelField name="КолонкиОбъектовНомерСтроки" id="81">
 									<DataPath>Объект.КолонкиОбъектов.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="КолонкиОбъектовНомерСтрокиКонтекстноеМеню" id="82"/>
 									<ExtendedTooltip name="КолонкиОбъектовНомерСтрокиРасширеннаяПодсказка" id="83"/>
+									<SelectedItemsActionsPanel name="КолонкиОбъектовНомерСтрокиПанельДействийВыделенныхСтрок" id="208"/>
 								</LabelField>
 								<InputField name="КолонкиОбъектовКолонкаОбъекта" id="84">
 									<DataPath>Объект.КолонкиОбъектов.КолонкаОбъекта</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="КолонкиОбъектовКолонкаОбъектаКонтекстноеМеню" id="85"/>
 									<ExtendedTooltip name="КолонкиОбъектовКолонкаОбъектаРасширеннаяПодсказка" id="86"/>
+									<SelectedItemsActionsPanel name="КолонкиОбъектовКолонкаОбъектаПанельДействийВыделенныхСтрок" id="209"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -323,11 +482,15 @@
 							<v8:content>Простые типы</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаПростыеТипыРасширеннаяПодсказка" id="88"/>
 					<ChildItems>
 						<Table name="ПростыеТипы" id="89">
 							<Representation>List</Representation>
 							<Height>1</Height>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -360,19 +523,100 @@
 								<ContextMenu name="ПростыеТипыУправлениеПоискомКонтекстноеМеню" id="100"/>
 								<ExtendedTooltip name="ПростыеТипыУправлениеПоискомРасширеннаяПодсказка" id="101"/>
 							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ПростыеТипыПанельДействийВыделенныхСтрок" id="211"/>
 							<ChildItems>
 								<LabelField name="ПростыеТипыНомерСтроки" id="102">
 									<DataPath>Объект.ПростыеТипы.LineNumber</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ContextMenu name="ПростыеТипыНомерСтрокиКонтекстноеМеню" id="103"/>
 									<ExtendedTooltip name="ПростыеТипыНомерСтрокиРасширеннаяПодсказка" id="104"/>
+									<SelectedItemsActionsPanel name="ПростыеТипыНомерСтрокиПанельДействийВыделенныхСтрок" id="212"/>
 								</LabelField>
 								<InputField name="ПростыеТипыПростойТип" id="105">
 									<DataPath>Объект.ПростыеТипы.ПростойТип</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ПростыеТипыПростойТипКонтекстноеМеню" id="106"/>
 									<ExtendedTooltip name="ПростыеТипыПростойТипРасширеннаяПодсказка" id="107"/>
+									<SelectedItemsActionsPanel name="ПростыеТипыПростойТипПанельДействийВыделенныхСтрок" id="213"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаЭлементыОбъектовСистемы" id="111">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элементы объектов системы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа элементы объектов системы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
+					<ExtendedTooltip name="ГруппаЭлементыОбъектовСистемыРасширеннаяПодсказка" id="112"/>
+					<ChildItems>
+						<Table name="ЭлементыОбъектовСистемы" id="113">
+							<Height>1</Height>
+							<RowSelectionMode>Cell</RowSelectionMode>
+							<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ЭлементыОбъектовСистемы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЭлементыОбъектовСистемыКонтекстноеМеню" id="114"/>
+							<AutoCommandBar name="ЭлементыОбъектовСистемыКоманднаяПанель" id="115"/>
+							<ExtendedTooltip name="ЭлементыОбъектовСистемыРасширеннаяПодсказка" id="116"/>
+							<SearchStringAddition name="ЭлементыОбъектовСистемыСтрокаПоиска" id="117">
+								<AdditionSource>
+									<Item>ЭлементыОбъектовСистемы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЭлементыОбъектовСистемыСтрокаПоискаКонтекстноеМеню" id="118"/>
+								<ExtendedTooltip name="ЭлементыОбъектовСистемыСтрокаПоискаРасширеннаяПодсказка" id="119"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЭлементыОбъектовСистемыСостояниеПросмотра" id="120">
+								<AdditionSource>
+									<Item>ЭлементыОбъектовСистемы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЭлементыОбъектовСистемыСостояниеПросмотраКонтекстноеМеню" id="121"/>
+								<ExtendedTooltip name="ЭлементыОбъектовСистемыСостояниеПросмотраРасширеннаяПодсказка" id="122"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЭлементыОбъектовСистемыУправлениеПоиском" id="123">
+								<AdditionSource>
+									<Item>ЭлементыОбъектовСистемы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЭлементыОбъектовСистемыУправлениеПоискомКонтекстноеМеню" id="124"/>
+								<ExtendedTooltip name="ЭлементыОбъектовСистемыУправлениеПоискомРасширеннаяПодсказка" id="125"/>
+							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ЭлементыОбъектовСистемыПанельДействийВыделенныхСтрок" id="215"/>
+							<ChildItems>
+								<LabelField name="ЭлементыОбъектовСистемыНомерСтроки" id="126">
+									<DataPath>Объект.ЭлементыОбъектовСистемы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ContextMenu name="ЭлементыОбъектовСистемыНомерСтрокиКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="ЭлементыОбъектовСистемыНомерСтрокиРасширеннаяПодсказка" id="128"/>
+									<SelectedItemsActionsPanel name="ЭлементыОбъектовСистемыНомерСтрокиПанельДействийВыделенныхСтрок" id="216"/>
+								</LabelField>
+								<InputField name="ЭлементыОбъектовСистемыЭлементОбъектаСистемы" id="129">
+									<DataPath>Объект.ЭлементыОбъектовСистемы.ЭлементОбъектаСистемы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЭлементыОбъектовСистемыЭлементОбъектаСистемыКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="ЭлементыОбъектовСистемыЭлементОбъектаСистемыРасширеннаяПодсказка" id="131"/>
+									<SelectedItemsActionsPanel name="ЭлементыОбъектовСистемыЭлементОбъектаСистемыПанельДействийВыделенныхСтрок" id="217"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -383,11 +627,13 @@
 		<InputField name="Описание" id="19">
 			<DataPath>Объект.Описание</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<MultiLine>true</MultiLine>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ОписаниеКонтекстноеМеню" id="20"/>
 			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="21"/>
+			<SelectedItemsActionsPanel name="ОписаниеПанельДействийВыделенныхСтрок" id="219"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>

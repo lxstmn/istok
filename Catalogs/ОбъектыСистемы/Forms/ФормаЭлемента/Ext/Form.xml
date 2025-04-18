@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
 	<SaveWindowSettings>false</SaveWindowSettings>
+	<Group>Vertical</Group>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
@@ -37,8 +39,10 @@
 							</ChoiceParameters>
 							<ContextMenu name="РодительКонтекстноеМеню" id="301"/>
 							<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="302"/>
+							<SelectedItemsActionsPanel name="РодительПанельДействийВыделенныхСтрок" id="699"/>
 						</InputField>
 						<UsualGroup name="Группа3" id="309">
+							<Group>HorizontalIfPossible</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="310"/>
@@ -46,9 +50,11 @@
 								<InputField name="Код" id="1">
 									<DataPath>Объект.Code</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<HorizontalStretch>true</HorizontalStretch>
 									<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+									<SelectedItemsActionsPanel name="КодПанельДействийВыделенныхСтрок" id="700"/>
 								</InputField>
 								<LabelDecoration name="ЦветXML" id="311">
 									<Width>25</Width>
@@ -72,9 +78,11 @@
 						<InputField name="Наименование" id="4">
 							<DataPath>Объект.Description</DataPath>
 							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+							<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="701"/>
 						</InputField>
 						<InputField name="СистемноеНаименование" id="105">
 							<DataPath>Объект.СистемноеНаименование</DataPath>
@@ -83,6 +91,7 @@
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="СистемноеНаименованиеКонтекстноеМеню" id="106"/>
 							<ExtendedTooltip name="СистемноеНаименованиеРасширеннаяПодсказка" id="107"/>
+							<SelectedItemsActionsPanel name="СистемноеНаименованиеПанельДействийВыделенныхСтрок" id="702"/>
 						</InputField>
 						<InputField name="ГУИД" id="643">
 							<DataPath>ГУИД</DataPath>
@@ -91,6 +100,7 @@
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ГУИДКонтекстноеМеню" id="644"/>
 							<ExtendedTooltip name="ГУИДРасширеннаяПодсказка" id="645"/>
+							<SelectedItemsActionsPanel name="ГУИДПанельДействийВыделенныхСтрок" id="703"/>
 						</InputField>
 						<InputField name="ТипОбъекта" id="102">
 							<DataPath>Объект.ТипОбъекта</DataPath>
@@ -98,9 +108,19 @@
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ТипОбъектаКонтекстноеМеню" id="103"/>
 							<ExtendedTooltip name="ТипОбъектаРасширеннаяПодсказка" id="104"/>
+							<SelectedItemsActionsPanel name="ТипОбъектаПанельДействийВыделенныхСтрок" id="704"/>
 							<Events>
 								<Event name="OnChange">ТипОбъектаПриИзменении</Event>
 							</Events>
+						</InputField>
+						<InputField name="РегистрДляХранения" id="696">
+							<DataPath>Объект.РегистрДляХранения</DataPath>
+							<Enabled>false</Enabled>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="РегистрДляХраненияКонтекстноеМеню" id="697"/>
+							<ExtendedTooltip name="РегистрДляХраненияРасширеннаяПодсказка" id="698"/>
+							<SelectedItemsActionsPanel name="РегистрДляХраненияПанельДействийВыделенныхСтрок" id="705"/>
 						</InputField>
 						<UsualGroup name="Группа5" id="655">
 							<Group>AlwaysHorizontal</Group>
@@ -113,6 +133,7 @@
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ВестиВариантыОбъектовКонтекстноеМеню" id="359"/>
 									<ExtendedTooltip name="ВестиВариантыОбъектовРасширеннаяПодсказка" id="360"/>
+									<SelectedItemsActionsPanel name="ВестиВариантыОбъектовПанельДействийВыделенныхСтрок" id="706"/>
 									<Events>
 										<Event name="OnChange">ВестиВариантыОбъектовПриИзменении</Event>
 									</Events>
@@ -123,6 +144,7 @@
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="АлгоритмЗаписиКонтекстноеМеню" id="641"/>
 									<ExtendedTooltip name="АлгоритмЗаписиРасширеннаяПодсказка" id="642"/>
+									<SelectedItemsActionsPanel name="АлгоритмЗаписиПанельДействийВыделенныхСтрок" id="707"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -145,12 +167,14 @@
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ВестиКорректировкиКонтекстноеМеню" id="650"/>
 									<ExtendedTooltip name="ВестиКорректировкиРасширеннаяПодсказка" id="651"/>
+									<SelectedItemsActionsPanel name="ВестиКорректировкиПанельДействийВыделенныхСтрок" id="708"/>
 								</CheckBoxField>
 								<InputField name="АлгоритмЗаписиКорректировки" id="652">
 									<DataPath>Объект.АлгоритмЗаписиКорректировки</DataPath>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="АлгоритмЗаписиКорректировкиКонтекстноеМеню" id="653"/>
 									<ExtendedTooltip name="АлгоритмЗаписиКорректировкиРасширеннаяПодсказка" id="654"/>
+									<SelectedItemsActionsPanel name="АлгоритмЗаписиКорректировкиПанельДействийВыделенныхСтрок" id="709"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -166,6 +190,7 @@
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ВестиВерсииКонтекстноеМеню" id="630"/>
 							<ExtendedTooltip name="ВестиВерсииРасширеннаяПодсказка" id="631"/>
+							<SelectedItemsActionsPanel name="ВестиВерсииПанельДействийВыделенныхСтрок" id="710"/>
 						</CheckBoxField>
 					</ChildItems>
 				</UsualGroup>
@@ -186,6 +211,7 @@
 					</InputHint>
 					<ContextMenu name="ОписаниеКонтекстноеМеню" id="250"/>
 					<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="251"/>
+					<SelectedItemsActionsPanel name="ОписаниеПанельДействийВыделенныхСтрок" id="711"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -206,12 +232,14 @@
 							<v8:content>Колонки</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаКолонкиРасширеннаяПодсказка" id="10"/>
 					<ChildItems>
 						<Table name="Колонки" id="546">
 							<Representation>Tree</Representation>
 							<Height>1</Height>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<RowSelectionMode>Cell</RowSelectionMode>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<DataPath>Колонки</DataPath>
 							<CommandSet>
@@ -274,10 +302,12 @@
 								<ContextMenu name="КолонкиУправлениеПоискомКонтекстноеМеню" id="557"/>
 								<ExtendedTooltip name="КолонкиУправлениеПоискомРасширеннаяПодсказка" id="558"/>
 							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="КолонкиПанельДействийВыделенныхСтрок" id="712"/>
 							<ChildItems>
 								<InputField name="КолонкиВариантОбъекта" id="559">
 									<DataPath>Колонки.ВариантОбъекта</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ChoiceParameterLinks>
 										<xr:Link>
@@ -296,10 +326,12 @@
 									</ChoiceParameters>
 									<ContextMenu name="КолонкиВариантОбъектаКонтекстноеМеню" id="560"/>
 									<ExtendedTooltip name="КолонкиВариантОбъектаРасширеннаяПодсказка" id="561"/>
+									<SelectedItemsActionsPanel name="КолонкиВариантОбъектаПанельДействийВыделенныхСтрок" id="713"/>
 								</InputField>
 								<InputField name="КолонкиКолонка" id="562">
 									<DataPath>Колонки.Колонка</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ChoiceParameters>
 										<app:item name="Отбор.ПометкаУдаления">
@@ -311,20 +343,25 @@
 									</ChoiceParameters>
 									<ContextMenu name="КолонкиКолонкаКонтекстноеМеню" id="563"/>
 									<ExtendedTooltip name="КолонкиКолонкаРасширеннаяПодсказка" id="564"/>
+									<SelectedItemsActionsPanel name="КолонкиКолонкаПанельДействийВыделенныхСтрок" id="714"/>
 								</InputField>
 								<CheckBoxField name="КолонкиИсключить" id="574">
 									<DataPath>Колонки.Исключить</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="КолонкиИсключитьКонтекстноеМеню" id="575"/>
 									<ExtendedTooltip name="КолонкиИсключитьРасширеннаяПодсказка" id="576"/>
+									<SelectedItemsActionsPanel name="КолонкиИсключитьПанельДействийВыделенныхСтрок" id="715"/>
 								</CheckBoxField>
 								<CheckBoxField name="КолонкиСохранять" id="632">
 									<DataPath>Колонки.Сохранять</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="КолонкиСохранятьКонтекстноеМеню" id="633"/>
 									<ExtendedTooltip name="КолонкиСохранятьРасширеннаяПодсказка" id="634"/>
+									<SelectedItemsActionsPanel name="КолонкиСохранятьПанельДействийВыделенныхСтрок" id="716"/>
 									<Events>
 										<Event name="OnChange">ТаблицыСохранятьВводПриИзменении</Event>
 									</Events>
@@ -332,9 +369,11 @@
 								<CheckBoxField name="КолонкиВвод" id="565">
 									<DataPath>Колонки.Ввод</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="КолонкиВводКонтекстноеМеню" id="566"/>
 									<ExtendedTooltip name="КолонкиВводРасширеннаяПодсказка" id="567"/>
+									<SelectedItemsActionsPanel name="КолонкиВводПанельДействийВыделенныхСтрок" id="717"/>
 									<Events>
 										<Event name="OnChange">ТаблицыСохранятьВводПриИзменении</Event>
 									</Events>
@@ -342,16 +381,20 @@
 								<CheckBoxField name="КолонкиВключитьВНаименование" id="568">
 									<DataPath>Колонки.ВключитьВНаименование</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="КолонкиВключитьВНаименованиеКонтекстноеМеню" id="569"/>
 									<ExtendedTooltip name="КолонкиВключитьВНаименованиеРасширеннаяПодсказка" id="570"/>
+									<SelectedItemsActionsPanel name="КолонкиВключитьВНаименованиеПанельДействийВыделенныхСтрок" id="718"/>
 								</CheckBoxField>
 								<CheckBoxField name="КолонкиВыводитьВСписке" id="571">
 									<DataPath>Колонки.ВыводитьВСписке</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="КолонкиВыводитьВСпискеКонтекстноеМеню" id="572"/>
 									<ExtendedTooltip name="КолонкиВыводитьВСпискеРасширеннаяПодсказка" id="573"/>
+									<SelectedItemsActionsPanel name="КолонкиВыводитьВСпискеПанельДействийВыделенныхСтрок" id="719"/>
 								</CheckBoxField>
 								<ColumnGroup name="КолонкиГруппа1" id="601">
 									<Visible>false</Visible>
@@ -360,6 +403,7 @@
 										<InputField name="КолонкиВладелецТипаКолонки" id="577">
 											<DataPath>Колонки.ВладелецТипаКолонки</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ChoiceParameters>
 												<app:item name="Отбор.ПометкаУдаления">
@@ -371,10 +415,12 @@
 											</ChoiceParameters>
 											<ContextMenu name="КолонкиВладелецТипаКолонкиКонтекстноеМеню" id="578"/>
 											<ExtendedTooltip name="КолонкиВладелецТипаКолонкиРасширеннаяПодсказка" id="579"/>
+											<SelectedItemsActionsPanel name="КолонкиВладелецТипаКолонкиПанельДействийВыделенныхСтрок" id="720"/>
 										</InputField>
 										<InputField name="КолонкиВладелецЗначенияКолонки" id="586">
 											<DataPath>Колонки.ВладелецЗначенияКолонки</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ChoiceParameters>
 												<app:item name="Отбор.ПометкаУдаления">
@@ -386,6 +432,7 @@
 											</ChoiceParameters>
 											<ContextMenu name="КолонкиВладелецЗначенияКолонкиКонтекстноеМеню" id="587"/>
 											<ExtendedTooltip name="КолонкиВладелецЗначенияКолонкиРасширеннаяПодсказка" id="588"/>
+											<SelectedItemsActionsPanel name="КолонкиВладелецЗначенияКолонкиПанельДействийВыделенныхСтрок" id="721"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
@@ -396,6 +443,7 @@
 										<InputField name="КолонкиТаблицаТиповКолонки" id="580">
 											<DataPath>Колонки.ТаблицаТиповКолонки</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ChoiceParameters>
 												<app:item name="Отбор.ПометкаУдаления">
@@ -407,10 +455,12 @@
 											</ChoiceParameters>
 											<ContextMenu name="КолонкиТаблицаТиповКолонкиКонтекстноеМеню" id="581"/>
 											<ExtendedTooltip name="КолонкиТаблицаТиповКолонкиРасширеннаяПодсказка" id="582"/>
+											<SelectedItemsActionsPanel name="КолонкиТаблицаТиповКолонкиПанельДействийВыделенныхСтрок" id="722"/>
 										</InputField>
 										<InputField name="КолонкиТаблицаВладельцевЗначения" id="589">
 											<DataPath>Колонки.ТаблицаВладельцевЗначения</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ChoiceParameters>
 												<app:item name="Отбор.ПометкаУдаления">
@@ -422,6 +472,7 @@
 											</ChoiceParameters>
 											<ContextMenu name="КолонкиТаблицаВладельцевЗначенияКонтекстноеМеню" id="590"/>
 											<ExtendedTooltip name="КолонкиТаблицаВладельцевЗначенияРасширеннаяПодсказка" id="591"/>
+											<SelectedItemsActionsPanel name="КолонкиТаблицаВладельцевЗначенияПанельДействийВыделенныхСтрок" id="723"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
@@ -432,6 +483,7 @@
 										<InputField name="КолонкиКолонкаТипаКолонки" id="583">
 											<DataPath>Колонки.КолонкаТипаКолонки</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ChoiceParameters>
 												<app:item name="Отбор.ПометкаУдаления">
@@ -443,10 +495,12 @@
 											</ChoiceParameters>
 											<ContextMenu name="КолонкиКолонкаТипаКолонкиКонтекстноеМеню" id="584"/>
 											<ExtendedTooltip name="КолонкиКолонкаТипаКолонкиРасширеннаяПодсказка" id="585"/>
+											<SelectedItemsActionsPanel name="КолонкиКолонкаТипаКолонкиПанельДействийВыделенныхСтрок" id="724"/>
 										</InputField>
 										<InputField name="КолонкиКолонкаВладельцаЗначения" id="592">
 											<DataPath>Колонки.КолонкаВладельцаЗначения</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ChoiceParameters>
 												<app:item name="Отбор.ПометкаУдаления">
@@ -458,6 +512,7 @@
 											</ChoiceParameters>
 											<ContextMenu name="КолонкиКолонкаВладельцаЗначенияКонтекстноеМеню" id="593"/>
 											<ExtendedTooltip name="КолонкиКолонкаВладельцаЗначенияРасширеннаяПодсказка" id="594"/>
+											<SelectedItemsActionsPanel name="КолонкиКолонкаВладельцаЗначенияПанельДействийВыделенныхСтрок" id="725"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
@@ -468,6 +523,7 @@
 										<InputField name="КолонкиКолонкаИсточник" id="595">
 											<DataPath>Колонки.КолонкаИсточник</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ChoiceParameters>
 												<app:item name="Отбор.ПометкаУдаления">
@@ -479,10 +535,12 @@
 											</ChoiceParameters>
 											<ContextMenu name="КолонкиКолонкаИсточникКонтекстноеМеню" id="596"/>
 											<ExtendedTooltip name="КолонкиКолонкаИсточникРасширеннаяПодсказка" id="597"/>
+											<SelectedItemsActionsPanel name="КолонкиКолонкаИсточникПанельДействийВыделенныхСтрок" id="726"/>
 										</InputField>
 										<InputField name="КолонкиЗначениеИсточника" id="598">
 											<DataPath>Колонки.ЗначениеИсточника</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ChoiceParameters>
 												<app:item name="Отбор.ПометкаУдаления">
@@ -494,6 +552,7 @@
 											</ChoiceParameters>
 											<ContextMenu name="КолонкиЗначениеИсточникаКонтекстноеМеню" id="599"/>
 											<ExtendedTooltip name="КолонкиЗначениеИсточникаРасширеннаяПодсказка" id="600"/>
+											<SelectedItemsActionsPanel name="КолонкиЗначениеИсточникаПанельДействийВыделенныхСтрок" id="727"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
@@ -508,12 +567,14 @@
 							<v8:content>Таблицы</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаТаблицыРасширеннаяПодсказка" id="37"/>
 					<ChildItems>
 						<Table name="Таблицы" id="515">
 							<Representation>Tree</Representation>
 							<Height>1</Height>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<RowSelectionMode>Cell</RowSelectionMode>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<DataPath>Таблицы</DataPath>
 							<CommandSet>
@@ -576,10 +637,12 @@
 								<ContextMenu name="ТаблицыУправлениеПоискомКонтекстноеМеню" id="526"/>
 								<ExtendedTooltip name="ТаблицыУправлениеПоискомРасширеннаяПодсказка" id="527"/>
 							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ТаблицыПанельДействийВыделенныхСтрок" id="729"/>
 							<ChildItems>
 								<InputField name="ТаблицыВариантОбъекта" id="528">
 									<DataPath>Таблицы.ВариантОбъекта</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ChoiceParameterLinks>
 										<xr:Link>
@@ -598,10 +661,12 @@
 									</ChoiceParameters>
 									<ContextMenu name="ТаблицыВариантОбъектаКонтекстноеМеню" id="529"/>
 									<ExtendedTooltip name="ТаблицыВариантОбъектаРасширеннаяПодсказка" id="530"/>
+									<SelectedItemsActionsPanel name="ТаблицыВариантОбъектаПанельДействийВыделенныхСтрок" id="730"/>
 								</InputField>
 								<InputField name="ТаблицыТаблица" id="531">
 									<DataPath>Таблицы.Таблица</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ChoiceParameters>
 										<app:item name="Отбор.ТипОбъекта">
@@ -619,20 +684,25 @@
 									</ChoiceParameters>
 									<ContextMenu name="ТаблицыТаблицаКонтекстноеМеню" id="532"/>
 									<ExtendedTooltip name="ТаблицыТаблицаРасширеннаяПодсказка" id="533"/>
+									<SelectedItemsActionsPanel name="ТаблицыТаблицаПанельДействийВыделенныхСтрок" id="731"/>
 								</InputField>
 								<CheckBoxField name="ТаблицыИсключить" id="537">
 									<DataPath>Таблицы.Исключить</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ТаблицыИсключитьКонтекстноеМеню" id="538"/>
 									<ExtendedTooltip name="ТаблицыИсключитьРасширеннаяПодсказка" id="539"/>
+									<SelectedItemsActionsPanel name="ТаблицыИсключитьПанельДействийВыделенныхСтрок" id="732"/>
 								</CheckBoxField>
 								<CheckBoxField name="ТаблицыСохранять" id="637">
 									<DataPath>Таблицы.Сохранять</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ТаблицыСохранятьКонтекстноеМеню" id="638"/>
 									<ExtendedTooltip name="ТаблицыСохранятьРасширеннаяПодсказка" id="639"/>
+									<SelectedItemsActionsPanel name="ТаблицыСохранятьПанельДействийВыделенныхСтрок" id="733"/>
 									<Events>
 										<Event name="OnChange">ТаблицыСохранятьВводПриИзменении</Event>
 									</Events>
@@ -640,9 +710,11 @@
 								<CheckBoxField name="ТаблицыВвод" id="534">
 									<DataPath>Таблицы.Ввод</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ТаблицыВводКонтекстноеМеню" id="535"/>
 									<ExtendedTooltip name="ТаблицыВводРасширеннаяПодсказка" id="536"/>
+									<SelectedItemsActionsPanel name="ТаблицыВводПанельДействийВыделенныхСтрок" id="734"/>
 									<Events>
 										<Event name="OnChange">ТаблицыСохранятьВводПриИзменении</Event>
 									</Events>
@@ -654,6 +726,7 @@
 										<InputField name="ТаблицыКолонкаИсточник" id="540">
 											<DataPath>Таблицы.КолонкаИсточник</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ChoiceParameters>
 												<app:item name="Отбор.ПометкаУдаления">
@@ -665,10 +738,12 @@
 											</ChoiceParameters>
 											<ContextMenu name="ТаблицыКолонкаИсточникКонтекстноеМеню" id="541"/>
 											<ExtendedTooltip name="ТаблицыКолонкаИсточникРасширеннаяПодсказка" id="542"/>
+											<SelectedItemsActionsPanel name="ТаблицыКолонкаИсточникПанельДействийВыделенныхСтрок" id="735"/>
 										</InputField>
 										<InputField name="ТаблицыЗначениеИсточника" id="543">
 											<DataPath>Таблицы.ЗначениеИсточника</DataPath>
 											<EditMode>EnterOnInput</EditMode>
+											<AutoEditMode>true</AutoEditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ChoiceParameters>
 												<app:item name="Отбор.ПометкаУдаления">
@@ -680,6 +755,7 @@
 											</ChoiceParameters>
 											<ContextMenu name="ТаблицыЗначениеИсточникаКонтекстноеМеню" id="544"/>
 											<ExtendedTooltip name="ТаблицыЗначениеИсточникаРасширеннаяПодсказка" id="545"/>
+											<SelectedItemsActionsPanel name="ТаблицыЗначениеИсточникаПанельДействийВыделенныхСтрок" id="736"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
@@ -695,12 +771,13 @@
 						</v8:item>
 					</Title>
 					<Group>AlwaysHorizontal</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаРазрезыДанныхРасширеннаяПодсказка" id="58"/>
 					<ChildItems>
 						<Table name="РазрезыДанных" id="401">
 							<Representation>Tree</Representation>
 							<Height>1</Height>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<RowSelectionMode>Cell</RowSelectionMode>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<DataPath>РазрезыДанных</DataPath>
 							<CommandSet>
@@ -771,10 +848,12 @@
 								<ContextMenu name="РазрезыДанныхУправлениеПоискомКонтекстноеМеню" id="412"/>
 								<ExtendedTooltip name="РазрезыДанныхУправлениеПоискомРасширеннаяПодсказка" id="413"/>
 							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="РазрезыДанныхПанельДействийВыделенныхСтрок" id="738"/>
 							<ChildItems>
 								<InputField name="РазрезыДанныхВариантОбъекта" id="445">
 									<DataPath>РазрезыДанных.ВариантОбъекта</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<Width>1</Width>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ChoiceParameterLinks>
@@ -794,10 +873,12 @@
 									</ChoiceParameters>
 									<ContextMenu name="РазрезыДанныхВариантОбъектаКонтекстноеМеню" id="446"/>
 									<ExtendedTooltip name="РазрезыДанныхВариантОбъектаРасширеннаяПодсказка" id="447"/>
+									<SelectedItemsActionsPanel name="РазрезыДанныхВариантОбъектаПанельДействийВыделенныхСтрок" id="739"/>
 								</InputField>
 								<InputField name="РазрезыДанныхРазрезДанных" id="414">
 									<DataPath>РазрезыДанных.РазрезДанных</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<Width>1</Width>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ChoiceParameters>
@@ -810,6 +891,7 @@
 									</ChoiceParameters>
 									<ContextMenu name="РазрезыДанныхРазрезДанныхКонтекстноеМеню" id="415"/>
 									<ExtendedTooltip name="РазрезыДанныхРазрезДанныхРасширеннаяПодсказка" id="416"/>
+									<SelectedItemsActionsPanel name="РазрезыДанныхРазрезДанныхПанельДействийВыделенныхСтрок" id="740"/>
 									<Events>
 										<Event name="OnChange">РазрезыДанныхРазрезДанныхПриИзменении</Event>
 									</Events>
@@ -817,9 +899,11 @@
 								<CheckBoxField name="РазрезыДанныхИсключить" id="512">
 									<DataPath>РазрезыДанных.Исключить</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="РазрезыДанныхИсключитьКонтекстноеМеню" id="513"/>
 									<ExtendedTooltip name="РазрезыДанныхИсключитьРасширеннаяПодсказка" id="514"/>
+									<SelectedItemsActionsPanel name="РазрезыДанныхИсключитьПанельДействийВыделенныхСтрок" id="741"/>
 									<Events>
 										<Event name="OnChange">РазрезыДанныхРазрезДанныхПриИзменении</Event>
 									</Events>
@@ -827,6 +911,7 @@
 								<InputField name="РазрезыДанныхТаблица" id="417">
 									<DataPath>РазрезыДанных.Таблица</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<Width>1</Width>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ChoiceParameters>
@@ -845,6 +930,7 @@
 									</ChoiceParameters>
 									<ContextMenu name="РазрезыДанныхТаблицаКонтекстноеМеню" id="418"/>
 									<ExtendedTooltip name="РазрезыДанныхТаблицаРасширеннаяПодсказка" id="419"/>
+									<SelectedItemsActionsPanel name="РазрезыДанныхТаблицаПанельДействийВыделенныхСтрок" id="742"/>
 									<Events>
 										<Event name="OnChange">РазрезыДанныхТаблицаПриИзменении</Event>
 									</Events>
@@ -852,22 +938,27 @@
 								<CheckBoxField name="РазрезыДанныхКонтрольОстатков" id="420">
 									<DataPath>РазрезыДанных.КонтрольОстатков</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="РазрезыДанныхКонтрольОстатковКонтекстноеМеню" id="421"/>
 									<ExtendedTooltip name="РазрезыДанныхКонтрольОстатковРасширеннаяПодсказка" id="422"/>
+									<SelectedItemsActionsPanel name="РазрезыДанныхКонтрольОстатковПанельДействийВыделенныхСтрок" id="743"/>
 								</CheckBoxField>
 								<InputField name="РазрезыДанныхКолонкаРазрезаДанных" id="423">
 									<DataPath>РазрезыДанных.КолонкаРазрезаДанных</DataPath>
 									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<Width>1</Width>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="РазрезыДанныхКолонкаРазрезаДанныхКонтекстноеМеню" id="424"/>
 									<ExtendedTooltip name="РазрезыДанныхКолонкаРазрезаДанныхРасширеннаяПодсказка" id="425"/>
+									<SelectedItemsActionsPanel name="РазрезыДанныхКолонкаРазрезаДанныхПанельДействийВыделенныхСтрок" id="744"/>
 								</InputField>
 								<InputField name="РазрезыДанныхКолонкаОбъекта" id="426">
 									<DataPath>РазрезыДанных.КолонкаОбъекта</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<Width>1</Width>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ChoiceParameters>
@@ -880,10 +971,12 @@
 									</ChoiceParameters>
 									<ContextMenu name="РазрезыДанныхКолонкаОбъектаКонтекстноеМеню" id="427"/>
 									<ExtendedTooltip name="РазрезыДанныхКолонкаОбъектаРасширеннаяПодсказка" id="428"/>
+									<SelectedItemsActionsPanel name="РазрезыДанныхКолонкаОбъектаПанельДействийВыделенныхСтрок" id="745"/>
 								</InputField>
 								<InputField name="РазрезыДанныхКолонкаТаблицы" id="429">
 									<DataPath>РазрезыДанных.КолонкаТаблицы</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<Width>1</Width>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ChoiceParameters>
@@ -896,6 +989,7 @@
 									</ChoiceParameters>
 									<ContextMenu name="РазрезыДанныхКолонкаТаблицыКонтекстноеМеню" id="430"/>
 									<ExtendedTooltip name="РазрезыДанныхКолонкаТаблицыРасширеннаяПодсказка" id="431"/>
+									<SelectedItemsActionsPanel name="РазрезыДанныхКолонкаТаблицыПанельДействийВыделенныхСтрок" id="746"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -908,12 +1002,14 @@
 							<v8:content>Основания</v8:content>
 						</v8:item>
 					</Title>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаОснованияРасширеннаяПодсказка" id="315"/>
 					<ChildItems>
 						<Table name="Основания" id="366">
 							<Representation>Tree</Representation>
 							<Height>1</Height>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<RowSelectionMode>Cell</RowSelectionMode>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<AutoAddIncomplete>false</AutoAddIncomplete>
 							<DataPath>Основания</DataPath>
@@ -977,10 +1073,12 @@
 								<ContextMenu name="ОснованияУправлениеПоискомКонтекстноеМеню" id="377"/>
 								<ExtendedTooltip name="ОснованияУправлениеПоискомРасширеннаяПодсказка" id="378"/>
 							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ОснованияПанельДействийВыделенныхСтрок" id="748"/>
 							<ChildItems>
 								<InputField name="ОснованияОснование" id="382">
 									<DataPath>Основания.Основание</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ChoiceParameters>
 										<app:item name="Отбор.ТипОбъекта">
@@ -1007,6 +1105,7 @@
 									</ChoiceParameters>
 									<ContextMenu name="ОснованияОснованиеКонтекстноеМеню" id="383"/>
 									<ExtendedTooltip name="ОснованияОснованиеРасширеннаяПодсказка" id="384"/>
+									<SelectedItemsActionsPanel name="ОснованияОснованиеПанельДействийВыделенныхСтрок" id="749"/>
 									<Events>
 										<Event name="OnChange">ОснованияОснованиеПриИзменении</Event>
 									</Events>
@@ -1014,6 +1113,7 @@
 								<InputField name="ОснованияВариантОбъектаОснования" id="385">
 									<DataPath>Основания.ВариантОбъектаОснования</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ChoiceParameterLinks>
 										<xr:Link>
@@ -1032,10 +1132,12 @@
 									</ChoiceParameters>
 									<ContextMenu name="ОснованияВариантОбъектаОснованияКонтекстноеМеню" id="386"/>
 									<ExtendedTooltip name="ОснованияВариантОбъектаОснованияРасширеннаяПодсказка" id="387"/>
+									<SelectedItemsActionsPanel name="ОснованияВариантОбъектаОснованияПанельДействийВыделенныхСтрок" id="750"/>
 								</InputField>
 								<InputField name="ОснованияВариантОбъекта" id="379">
 									<DataPath>Основания.ВариантОбъекта</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ChoiceParameterLinks>
 										<xr:Link>
@@ -1054,13 +1156,16 @@
 									</ChoiceParameters>
 									<ContextMenu name="ОснованияВариантОбъектаКонтекстноеМеню" id="380"/>
 									<ExtendedTooltip name="ОснованияВариантОбъектаРасширеннаяПодсказка" id="381"/>
+									<SelectedItemsActionsPanel name="ОснованияВариантОбъектаПанельДействийВыделенныхСтрок" id="751"/>
 								</InputField>
 								<CheckBoxField name="ОснованияИсключить" id="388">
 									<DataPath>Основания.Исключить</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ОснованияИсключитьКонтекстноеМеню" id="389"/>
 									<ExtendedTooltip name="ОснованияИсключитьРасширеннаяПодсказка" id="390"/>
+									<SelectedItemsActionsPanel name="ОснованияИсключитьПанельДействийВыделенныхСтрок" id="752"/>
 								</CheckBoxField>
 							</ChildItems>
 						</Table>
@@ -1079,12 +1184,14 @@
 							<v8:content>Группа источники</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Group>Vertical</Group>
+					<ScrollOnCompress>false</ScrollOnCompress>
 					<ExtendedTooltip name="ГруппаИсточникиРасширеннаяПодсказка" id="660"/>
 					<ChildItems>
 						<Table name="Источники" id="661">
 							<Representation>Tree</Representation>
 							<Height>1</Height>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<RowSelectionMode>Cell</RowSelectionMode>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<AutoAddIncomplete>false</AutoAddIncomplete>
 							<DataPath>Источники</DataPath>
@@ -1148,34 +1255,43 @@
 								<ContextMenu name="ИсточникиУправлениеПоискомКонтекстноеМеню" id="672"/>
 								<ExtendedTooltip name="ИсточникиУправлениеПоискомРасширеннаяПодсказка" id="673"/>
 							</SearchControlAddition>
+							<SelectedItemsActionsPanel name="ИсточникиПанельДействийВыделенныхСтрок" id="754"/>
 							<ChildItems>
 								<InputField name="ИсточникиИсточник" id="677">
 									<DataPath>Источники.Источник</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ИсточникиИсточникКонтекстноеМеню" id="678"/>
 									<ExtendedTooltip name="ИсточникиИсточникРасширеннаяПодсказка" id="679"/>
+									<SelectedItemsActionsPanel name="ИсточникиИсточникПанельДействийВыделенныхСтрок" id="755"/>
 								</InputField>
 								<InputField name="ИсточникиВариантОбъектаИсточника" id="680">
 									<DataPath>Источники.ВариантОбъектаИсточника</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ИсточникиВариантОбъектаИсточникаКонтекстноеМеню" id="681"/>
 									<ExtendedTooltip name="ИсточникиВариантОбъектаИсточникаРасширеннаяПодсказка" id="682"/>
+									<SelectedItemsActionsPanel name="ИсточникиВариантОбъектаИсточникаПанельДействийВыделенныхСтрок" id="756"/>
 								</InputField>
 								<InputField name="ИсточникиВариантОбъекта" id="674">
 									<DataPath>Источники.ВариантОбъекта</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ИсточникиВариантОбъектаКонтекстноеМеню" id="675"/>
 									<ExtendedTooltip name="ИсточникиВариантОбъектаРасширеннаяПодсказка" id="676"/>
+									<SelectedItemsActionsPanel name="ИсточникиВариантОбъектаПанельДействийВыделенныхСтрок" id="757"/>
 								</InputField>
 								<CheckBoxField name="ИсточникиИсключить" id="683">
 									<DataPath>Источники.Исключить</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<AutoEditMode>true</AutoEditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ИсточникиИсключитьКонтекстноеМеню" id="684"/>
 									<ExtendedTooltip name="ИсточникиИсключитьРасширеннаяПодсказка" id="685"/>
+									<SelectedItemsActionsPanel name="ИсточникиИсключитьПанельДействийВыделенныхСтрок" id="758"/>
 								</CheckBoxField>
 							</ChildItems>
 						</Table>

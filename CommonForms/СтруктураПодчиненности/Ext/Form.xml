@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<CommandBarLocation>None</CommandBarLocation>
+	<ShowCommandBar>false</ShowCommandBar>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
@@ -11,6 +14,9 @@
 	<ChildItems>
 		<Table name="СтруктураПодчиненности" id="29">
 			<Representation>Tree</Representation>
+			<Height>1</Height>
+			<RowSelectionMode>Cell</RowSelectionMode>
+			<UseAlternationRowColorBWA>false</UseAlternationRowColorBWA>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<DataPath>СтруктураПодчиненности</DataPath>
 			<CommandSet>
@@ -66,6 +72,7 @@
 				<ContextMenu name="СтруктураПодчиненностиУправлениеПоискомКонтекстноеМеню" id="40"/>
 				<ExtendedTooltip name="СтруктураПодчиненностиУправлениеПоискомРасширеннаяПодсказка" id="41"/>
 			</SearchControlAddition>
+			<SelectedItemsActionsPanel name="СтруктураПодчиненностиПанельДействийВыделенныхСтрок" id="65"/>
 			<Events>
 				<Event name="BeforeRowChange">СтруктураПодчиненностиПередНачаломИзменения</Event>
 			</Events>
@@ -77,6 +84,7 @@
 							<v8:content>Структура подчиненности группа</v8:content>
 						</v8:item>
 					</Title>
+					<Width>1</Width>
 					<Group>InCell</Group>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="СтруктураПодчиненностиГруппаРасширеннаяПодсказка" id="49"/>
@@ -85,6 +93,7 @@
 							<DataPath>СтруктураПодчиненности.СтатусДокумента</DataPath>
 							<TitleLocation>None</TitleLocation>
 							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
 							<Width>1</Width>
 							<ValuesPicture>
 								<xr:Abs>ValuesPicture.png</xr:Abs>
@@ -92,15 +101,18 @@
 							</ValuesPicture>
 							<ContextMenu name="СтруктураПодчиненностиСтатусДокументаКонтекстноеМеню" id="46"/>
 							<ExtendedTooltip name="СтруктураПодчиненностиСтатусДокументаРасширеннаяПодсказка" id="47"/>
+							<SelectedItemsActionsPanel name="СтруктураПодчиненностиСтатусДокументаПанельДействийВыделенныхСтрок" id="66"/>
 						</PictureField>
 						<InputField name="СтруктураПодчиненностиЭлементОбъектаСистемы" id="42">
 							<DataPath>СтруктураПодчиненности.ЭлементОбъектаСистемы</DataPath>
 							<EditMode>EnterOnInput</EditMode>
+							<AutoEditMode>true</AutoEditMode>
 							<Width>1</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="СтруктураПодчиненностиЭлементОбъектаСистемыКонтекстноеМеню" id="43"/>
 							<ExtendedTooltip name="СтруктураПодчиненностиЭлементОбъектаСистемыРасширеннаяПодсказка" id="44"/>
+							<SelectedItemsActionsPanel name="СтруктураПодчиненностиЭлементОбъектаСистемыПанельДействийВыделенныхСтрок" id="67"/>
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
@@ -108,17 +120,51 @@
 					<DataPath>СтруктураПодчиненности.Корректировка</DataPath>
 					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="СтруктураПодчиненностиКорректировкаКонтекстноеМеню" id="54"/>
 					<ExtendedTooltip name="СтруктураПодчиненностиКорректировкаРасширеннаяПодсказка" id="55"/>
+					<SelectedItemsActionsPanel name="СтруктураПодчиненностиКорректировкаПанельДействийВыделенныхСтрок" id="68"/>
 				</InputField>
 				<InputField name="СтруктураПодчиненностиВерсия" id="50">
 					<DataPath>СтруктураПодчиненности.Версия</DataPath>
 					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="СтруктураПодчиненностиВерсияКонтекстноеМеню" id="51"/>
 					<ExtendedTooltip name="СтруктураПодчиненностиВерсияРасширеннаяПодсказка" id="52"/>
+					<SelectedItemsActionsPanel name="СтруктураПодчиненностиВерсияПанельДействийВыделенныхСтрок" id="69"/>
+				</InputField>
+				<InputField name="СтруктураПодчиненностиЭлементОбъектаСистемыОбъектСистемы" id="56">
+					<DataPath>СтруктураПодчиненности.ЭлементОбъектаСистемы.ОбъектСистемы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Width>1</Width>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураПодчиненностиЭлементОбъектаСистемыОбъектСистемыКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="СтруктураПодчиненностиЭлементОбъектаСистемыОбъектСистемыРасширеннаяПодсказка" id="58"/>
+					<SelectedItemsActionsPanel name="СтруктураПодчиненностиЭлементОбъектаСистемыОбъектСистемыПанельДействийВыделенныхСтрок" id="70"/>
+				</InputField>
+				<InputField name="СтруктураПодчиненностиЭлементОбъектаСистемыДата" id="59">
+					<DataPath>СтруктураПодчиненности.ЭлементОбъектаСистемы.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Width>1</Width>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураПодчиненностиЭлементОбъектаСистемыДатаКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="СтруктураПодчиненностиЭлементОбъектаСистемыДатаРасширеннаяПодсказка" id="61"/>
+					<SelectedItemsActionsPanel name="СтруктураПодчиненностиЭлементОбъектаСистемыДатаПанельДействийВыделенныхСтрок" id="71"/>
+				</InputField>
+				<InputField name="СтруктураПодчиненностиЭлементОбъектаСистемыНомер" id="62">
+					<DataPath>СтруктураПодчиненности.ЭлементОбъектаСистемы.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<AutoEditMode>true</AutoEditMode>
+					<Width>1</Width>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураПодчиненностиЭлементОбъектаСистемыНомерКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СтруктураПодчиненностиЭлементОбъектаСистемыНомерРасширеннаяПодсказка" id="64"/>
+					<SelectedItemsActionsPanel name="СтруктураПодчиненностиЭлементОбъектаСистемыНомерПанельДействийВыделенныхСтрок" id="72"/>
 				</InputField>
 			</ChildItems>
 		</Table>

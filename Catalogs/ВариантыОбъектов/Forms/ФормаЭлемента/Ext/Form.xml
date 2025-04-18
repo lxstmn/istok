@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:pal="http://v8.1c.ru/8.1/data/ui/colors/palette" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.21">
+	<WindowOpeningMode>DontBlock</WindowOpeningMode>
+	<Group>Vertical</Group>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
@@ -9,23 +11,29 @@
 		<InputField name="Владелец" id="7">
 			<DataPath>Объект.Owner</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
+			<SelectedItemsActionsPanel name="ВладелецПанельДействийВыделенныхСтрок" id="45"/>
 		</InputField>
 		<InputField name="Код" id="1">
 			<DataPath>Объект.Code</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+			<SelectedItemsActionsPanel name="КодПанельДействийВыделенныхСтрок" id="46"/>
 		</InputField>
 		<InputField name="Наименование" id="4">
 			<DataPath>Объект.Description</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+			<SelectedItemsActionsPanel name="НаименованиеПанельДействийВыделенныхСтрок" id="47"/>
 		</InputField>
 		<InputField name="СистемноеНаименование" id="22">
 			<DataPath>Объект.СистемноеНаименование</DataPath>
@@ -33,6 +41,7 @@
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="СистемноеНаименованиеКонтекстноеМеню" id="23"/>
 			<ExtendedTooltip name="СистемноеНаименованиеРасширеннаяПодсказка" id="24"/>
+			<SelectedItemsActionsPanel name="СистемноеНаименованиеПанельДействийВыделенныхСтрок" id="48"/>
 		</InputField>
 		<InputField name="ГУИД" id="25">
 			<DataPath>ГУИД</DataPath>
@@ -40,14 +49,17 @@
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ГУИДКонтекстноеМеню" id="26"/>
 			<ExtendedTooltip name="ГУИДРасширеннаяПодсказка" id="27"/>
+			<SelectedItemsActionsPanel name="ГУИДПанельДействийВыделенныхСтрок" id="49"/>
 		</InputField>
 		<InputField name="АлгоритмЗаписи" id="16">
 			<DataPath>Объект.АлгоритмЗаписи</DataPath>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="АлгоритмЗаписиКонтекстноеМеню" id="17"/>
 			<ExtendedTooltip name="АлгоритмЗаписиРасширеннаяПодсказка" id="18"/>
+			<SelectedItemsActionsPanel name="АлгоритмЗаписиПанельДействийВыделенныхСтрок" id="50"/>
 		</InputField>
 		<UsualGroup name="Группа3" id="43">
+			<Group>HorizontalIfPossible</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="44"/>
@@ -57,6 +69,7 @@
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ВестиКорректировкиКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="ВестиКорректировкиРасширеннаяПодсказка" id="33"/>
+					<SelectedItemsActionsPanel name="ВестиКорректировкиПанельДействийВыделенныхСтрок" id="51"/>
 				</CheckBoxField>
 				<InputField name="АлгоритмЗаписиКорректировки" id="34">
 					<DataPath>Объект.АлгоритмЗаписиКорректировки</DataPath>
@@ -66,6 +79,7 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="АлгоритмЗаписиКорректировкиКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="АлгоритмЗаписиКорректировкиРасширеннаяПодсказка" id="36"/>
+					<SelectedItemsActionsPanel name="АлгоритмЗаписиКорректировкиПанельДействийВыделенныхСтрок" id="52"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -74,15 +88,18 @@
 			<CheckBoxType>Auto</CheckBoxType>
 			<ContextMenu name="ВестиВерсииКонтекстноеМеню" id="20"/>
 			<ExtendedTooltip name="ВестиВерсииРасширеннаяПодсказка" id="21"/>
+			<SelectedItemsActionsPanel name="ВестиВерсииПанельДействийВыделенныхСтрок" id="53"/>
 		</CheckBoxField>
 		<InputField name="Описание" id="10">
 			<DataPath>Объект.Описание</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<AutoEditMode>true</AutoEditMode>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<MultiLine>true</MultiLine>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ОписаниеКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="12"/>
+			<SelectedItemsActionsPanel name="ОписаниеПанельДействийВыделенныхСтрок" id="54"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>
